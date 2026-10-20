@@ -1,0 +1,228 @@
+---
+name: Cybernetic Audit Control
+colors:
+  surface: '#0e1323'
+  surface-dim: '#0e1323'
+  surface-bright: '#34394a'
+  surface-container-lowest: '#080d1d'
+  surface-container-low: '#161b2b'
+  surface-container: '#1a1f30'
+  surface-container-high: '#25293a'
+  surface-container-highest: '#2f3446'
+  on-surface: '#dee1f9'
+  on-surface-variant: '#bcc8ce'
+  inverse-surface: '#dee1f9'
+  inverse-on-surface: '#2b3041'
+  outline: '#879398'
+  outline-variant: '#3d494d'
+  surface-tint: '#55d5fe'
+  primary: '#baebff'
+  on-primary: '#003544'
+  primary-container: '#56d6ff'
+  on-primary-container: '#005b71'
+  inverse-primary: '#006780'
+  secondary: '#cebdff'
+  on-secondary: '#381385'
+  secondary-container: '#4f319c'
+  on-secondary-container: '#bea8ff'
+  tertiary: '#69fdc0'
+  on-tertiary: '#003825'
+  tertiary-container: '#46e0a5'
+  on-tertiary-container: '#005f41'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#b8eaff'
+  primary-fixed-dim: '#55d5fe'
+  on-primary-fixed: '#001f28'
+  on-primary-fixed-variant: '#004d61'
+  secondary-fixed: '#e8ddff'
+  secondary-fixed-dim: '#cebdff'
+  on-secondary-fixed: '#21005e'
+  on-secondary-fixed-variant: '#4f319c'
+  tertiary-fixed: '#68fcbf'
+  tertiary-fixed-dim: '#45dfa4'
+  on-tertiary-fixed: '#002114'
+  on-tertiary-fixed-variant: '#005137'
+  background: '#0e1323'
+  on-background: '#dee1f9'
+  surface-variant: '#2f3446'
+typography:
+  display-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.03em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '700'
+    lineHeight: 28px
+    letterSpacing: -0.02em
+  title-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '600'
+    lineHeight: 22px
+    letterSpacing: -0.01em
+  stat-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '700'
+    lineHeight: 24px
+    letterSpacing: -0.02em
+  body-base:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 21px
+    letterSpacing: 0em
+  body-bold:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 21px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12.5px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0em
+  code-base:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 21px
+    letterSpacing: 0em
+  code-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+  label-caps:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.06em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.125rem
+  margin: 1rem
+  margin-desktop: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.875rem
+  space-lg: 1.125rem
+  space-xl: 1.5rem
+---
+
+## Brand & Style
+
+This design system expresses a high-precision, mission-control desktop workspace for developers, sysadmins, and enterprise storage operators handling mission-critical file transformations. The core philosophy centers on total operational sovereignty and absolute predictability: **"Nothing changes without your approval."**
+
+The visual language synthesizes modern desktop dark aesthetics with tactile developer ergonomics:
+- **Atmospheric Depth:** Grounded in a deep cosmic obsidian foundation (`#0B1020`), enriched by translucent layered panels and subtle bioluminescent cyan and neural violet environmental glows.
+- **Structural Precision:** Crisp 1px structural framing (`#29364D`) separating complex multi-pane workflows without visual clutter.
+- **Auditable Safety:** Prominent non-destructive simulation modes, explicit approval thresholds, cryptographic monospaced verification paths, and unmistakable categorical status badges (Success Emerald, Caution Amber, Halt Coral).
+- **Restrained Micro-interactions:** Tactile elevation shifts, subtle glow vectors on active execution states, and strict hardware-accelerated transitions that communicate responsiveness without frivolous motion.
+
+## Colors
+
+The palette establishes an ultra-dark, high-contrast operational environment designed for high-density data legibility and long operational sessions.
+
+### Functional Roles & Accents
+- **Primary Cyan (`#56D6FF`)**: Directs user focus toward safe primary progression actions, system telemetry counters, focused input perimeters, and active directory markers.
+- **Neural Violet (`#A78BFA`)**: Encapsulates AI intelligence parsing, batch classification routines, directory tree depth indicators, and script execution catalog highlights.
+- **Verified Emerald (`#34D399`)**: Signifies cryptographic verification, complete integrity checks, successful terminal exit states (`exit 0`), and safe migration simulation passes.
+- **Cautionary Amber (`#FBBF24`)**: Flags dry-run delta modifications, impending overwrite collisions, symlink warnings, and large-file payload thresholds.
+- **Destructive Rose (`#FB7185`)**: Demarcates irreversible file deletions, process abort triggers, non-zero execution exceptions, and stderr streams.
+
+### Surface Hierarchy & Scaffolding
+- **Root Canvas (`#0B1020`)**: Root application window backdrop.
+- **Sidebar & Surface Navigation (`#101729`)**: Static anchoring containers for workspace selection and navigation rails.
+- **Elevated Interactive Card Surface (`#182237`)**: Solid high-contrast container surface. Translucent variant sits at `rgba(19, 26, 42, 0.75)` with a 10px backdrop blur.
+- **Terminal Void (`#06090E`)**: Dedicated low-luminosity well for live streaming logs and replay buffers.
+- **Structural Borders (`#29364D`)**: Hairline 1px dividers providing rigid spatial definition.
+- **Text Primary (`#F4F7FF`)** & **Text Secondary (`#9CAAC1`)**: Starlight white for absolute foreground legibility paired with muted slate for metadata and auxiliary labels.
+
+## Typography
+
+The typographic hierarchy bifurcates into human-centric UI presentation and technical machine verification:
+- **Headings & Structural Titles (`Plus Jakarta Sans`):** Provides geometric authority, modern proportions, and high-impact legibility for section markers, telemetry counts, and application dialog headers.
+- **Interface Copy (`Inter`):** Offers neutral, highly systematic reading flow across multi-step confirmation modals, parameter descriptions, and configuration panes.
+- **Technical & Stream Data (`JetBrains Mono`):** Strictly deployed for filepaths, SHA-256 signatures, terminal logging stdout/stderr streams, byte calculations, and category classification tags. Always rendered with `font-feature-settings: 'tnum' 1` (tabular figures) to guarantee precise vertical alignment during rapid log progression.
+
+## Layout & Spacing
+
+The design system targets desktop Electron runtimes with a target canvas of **1440x900px** (minimum viable window bounds: 900x600px).
+
+### Layout Geometry
+- **Window Chrome:** Fixed `44px` custom title bar supporting native window controls, runtime environment pills, and non-blocking background task indicators.
+- **Sidebar (Master Controller):** Fixed width of `340px`, anchored with a `1px solid #29364D` border to the right, utilizing vertical scroll containment for directory trees and target statistics.
+- **Workspace Canvas (Flexible Dynamic Grid):** Elastic `1fr` workspace subdivided vertically into:
+  1. *Action / Catalog Deck:* Variable-height grid hosting automation targets and dry-run simulation matrices.
+  2. *Terminal Console Stream:* Minimum `240px` expanding viewport pinned to the lower workspace for real-time validation logs.
+
+### Rhythm & Densities
+Internal card padding is locked to `space-lg` (`1.125rem` / `18px`). Micro telemetry modules and metadata pills adopt `space-xs` and `space-sm` increments to maximize information density while maintaining instant visual parsing.
+
+## Elevation & Depth
+
+Visual hierarchy is maintained via tonal layering, sharp outline definition, and translucent depth rather than heavy drop shadows:
+
+- **Level 0 (Base Canvas):** Solid Obsidian (`#0B1020`), purely absorbing ambient background gradients.
+- **Level 1 (Dock & Structural Sidebar):** Midnight Slate (`#101729`) framed with hairline outlines (`1px solid #29364D`).
+- **Level 2 (Panels & Cards):** Translucent glass panels (`rgba(19, 26, 42, 0.75)`) backed by `backdrop-filter: blur(10px)` and an ambient shadow `0 8px 24px rgba(0, 0, 0, 0.25)`.
+- **Level 3 (Modals, Overlays & Pre-Flight Confirmations):** Solid Abyssal Slate (`#182237`) with a dual-layer shadow: `0 12px 32px rgba(0, 0, 0, 0.45)`, enveloped by an active outer boundary border `rgba(86, 214, 255, 0.2)`.
+- **Active / Interactive Glow:** Elements in focused or active processing states (such as AI batch processing or selected migration cards) omit blurred shadows in favor of a crisp `0 0 0 1px #56D6FF` focus ring accompanied by a diffused `0 4px 16px rgba(86, 214, 255, 0.2)` soft glow.
+
+## Shapes
+
+The interface embraces a balanced semi-rounded design language (`roundedness: 2` / base `0.5rem` / `8px` to `10px`), providing a tactile desktop feel that avoids overly playful forms:
+- **Buttons & Standard Inputs:** `0.5rem` (`8px` to `10px`) corner radius.
+- **Cards, Panels & Console Viewports:** `rounded-lg` (`1rem` / `14px`) corner radius.
+- **Pre-flight Approval Dialogs:** `rounded-xl` (`1.5rem` / `24px`) corner radius to emphasize safe operational enclosure.
+- **Status Pills & Extension Chips:** `9999px` full-capsule radii for clear separation from structural interface containers.
+
+## Components
+
+### Buttons
+- **Primary Execution Button:** Gradient fill `linear-gradient(135deg, #00B4D8, #0077B6)` with white high-contrast text, `space-sm` vertical by `space-xl` horizontal padding, and a subtle cyan glow on hover.
+- **Secondary Neutral Button:** Dark slate container (`#182237`), `1px solid #29364D`, with white text; transitions to `rgba(28, 38, 60, 0.85)` on hover.
+- **Critical Abort Button:** Translucent danger wash (`rgba(251, 113, 133, 0.15)`), `1px solid rgba(251, 113, 133, 0.3)`, text in Coral Danger (`#FB7185`), shifting to full solid `#FB7185` on active hover.
+
+### Pre-Flight Safety Approval Banner & Modals
+- High-priority confirmation bars anchored by a glowing warning border.
+- Dry-run comparison side-by-side matrices: left column (Source) framed in Steel Slate, right column (Simulated Destination) framed in Emerald.
+- The approval trigger explicitly states the quantity of files being altered, enforcing the core tenet: *"Nothing changes without your approval."*
+
+### Chips & File Type Tokens
+- Monospaced capsule chips (`code-sm` typography):
+  - `.ts`, `.py`, `.sh`: Neural Violet container (`rgba(167, 139, 250, 0.12)`) and text (`#A78BFA`).
+  - `.zip`, `.tar`: Caution Amber container (`rgba(251, 191, 36, 0.12)`) and text (`#FBBF24`).
+  - `.png`, `.svg`: Mint Emerald container (`rgba(52, 211, 153, 0.12)`) and text (`#34D399`).
+  - Directory Folders: Electric Cyan container (`rgba(86, 214, 255, 0.12)`) and text (`#56D6FF`).
+
+### Terminal Console Viewport
+- Pinned container with `#06090E` fill, `#0D1117` header bar with monospaced stream telemetry (buffer lines, status code).
+- Standard output rendered in Starlight White (`#F4F7FF`); standard error rendered in Danger Coral (`#FB7185`). Bracketed timestamps use muted carbon slate (`#64748B`).
+
+### Input Fields & Search Bars
+- Background `#101729`, `1px solid #29364D`, placeholder in Secondary Slate (`#9CAAC1`).
+- Focus state activates an electric cyan hairline border (`#56D6FF`) and an ambient focus ring (`rgba(86, 214, 255, 0.25)`).
+
+### Cards & Telemetry Tiles
+- Telemetry summary tiles (File count, Directory count, Byte weights) feature a prominent `stat-lg` numeric display stacked above a `label-caps` monospaced descriptor.
+- Tiles feature a `1px solid #29364D` border with subtle micro-translations (`transform: translateY(-1px)`) on cursor hover.

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#080d1d;color:#dee1f9;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.drag-region{-webkit-app-region:drag;}.no-drag{-webkit-app-region:no-drag;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#dee1f9", "on-secondary-container": "#bea8ff", "tertiary-fixed-dim": "#45dfa4", "background": "#0e1323", "inverse-on-surface": "#2b3041", "on-tertiary-container": "#005f41", "tertiary-fixed": "#68fcbf", "primary-fixed-dim": "#55d5fe", "inverse-primary": "#006780", "secondary": "#cebdff", "surface-dim": "#0e1323", "surface-variant": "#2f3446", "error": "#ffb4ab", "error-container": "#93000a", "surface-container-highest": "#2f3446", "surface-tint": "#55d5fe", "on-error-container": "#ffdad6", "on-primary-container": "#005b71", "surface-container-low": "#161b2b", "primary": "#baebff", "secondary-fixed-dim": "#cebdff", "secondary-fixed": "#e8ddff", "on-secondary-fixed-variant": "#4f319c", "on-surface-variant": "#bcc8ce", "tertiary": "#69fdc0", "on-secondary": "#381385", "inverse-surface": "#dee1f9", "outline": "#879398", "surface-bright": "#34394a", "outline-variant": "#3d494d", "on-surface": "#dee1f9", "on-primary": "#003544", "on-primary-fixed-variant": "#004d61", "secondary-container": "#4f319c", "on-primary-fixed": "#001f28", "on-error": "#690005", "on-secondary-fixed": "#21005e", "surface": "#0e1323", "primary-container": "#56d6ff", "surface-container-lowest": "#080d1d", "surface-container-high": "#25293a", "primary-fixed": "#b8eaff", "on-tertiary-fixed-variant": "#005137", "surface-container": "#1a1f30", "on-tertiary-fixed": "#002114", "on-tertiary": "#003825", "tertiary-container": "#46e0a5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.125rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.125rem", "gutter": "1rem", "margin-desktop": "1.5rem", "space-xl": "1.5rem", "space-md": "0.875rem", "margin": "1rem" }, "fontFamily": { "title-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "body-base": [ "Inter" ], "body-bold": [ "Inter" ], "stat-lg": [ "Plus Jakarta Sans" ], "code-sm": [ "JetBrains Mono" ], "label-caps": [ "JetBrains Mono" ], "display-lg": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "code-base": [ "JetBrains Mono" ] }, "fontSize": { "title-sm": [ "15px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "12.5px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-base": [ "14px", { "lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-bold": [ "14px", { "lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "600" } ], "stat-lg": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "display-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "headline-md": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "code-base": [ "13px", { "lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface-container-lowest text-on-surface font-body-base text-body-base selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 h-14 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] flex items-center justify-between px-space-md drag-region"><div class="flex items-center gap-space-md no-drag"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary tracking-tight font-bold">VORQEN</span><span class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container-high text-secondary border border-outline-variant/30">v1.4.0</span></div><div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="text-outline-variant">|</span><span>Know your files. Keep what matters.</span></div></div><div class="hidden md:flex items-center gap-space-sm no-drag"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg border border-outline-variant/40 shadow-inner"><span class="material-symbols-outlined text-primary text-[16px]">folder</span><span class="font-code-sm text-code-sm text-on-surface truncate max-w-[240px] lg:max-w-[320px]">D:\Workspace\Academic_Projects</span><button class="font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface hover:bg-surface-bright hover:text-on-surface transition-colors" type="button">Change Folder</button></div><div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high/60 border border-tertiary-container/30"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span><span class="font-code-sm text-code-sm text-tertiary">Safe Mode: Approval Required</span></div></div><div class="flex items-center gap-space-sm no-drag"><div class="relative hidden lg:block"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[16px]">search</span><input class="w-52 bg-surface-container-low text-on-surface placeholder:text-outline text-body-sm font-body-sm pl-8 pr-3 py-1 rounded-lg border border-outline-variant/50 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Quick search files, scripts..." type="text"/></div><a class="flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high/70 border border-primary-container/40 text-primary hover:bg-surface-bright transition-colors group" href="#" title="Toggle AI Assistant (Ctrl+Space)"><span class="material-symbols-outlined text-[16px] text-primary group-hover:scale-110 transition-transform">auto_awesome</span><span class="font-body-sm text-body-sm hidden xl:inline font-semibold">Ask AI</span><kbd class="font-code-sm text-code-sm px-1 py-0.2 rounded bg-surface-container-low text-on-surface-variant border border-outline-variant/30">Ctrl+␣</kbd></a><div class="flex items-center bg-surface-container-low rounded-lg p-0.5 border border-outline-variant/40 font-code-sm text-code-sm"><button class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">EN</button><button class="px-1.5 py-0.5 rounded text-on-surface-variant hover:text-on-surface">FR</button><button class="px-1.5 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-sans">العربية</button></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-[9px] flex items-center justify-center font-bold">1</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex items-center ml-space-xs pl-space-xs border-l border-outline-variant/40"><button class="p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors"><span class="material-symbols-outlined text-[16px]">minimize</span></button><button class="p-1 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors"><span class="material-symbols-outlined text-[16px]">crop_square</span></button><button class="p-1 text-on-surface-variant hover:text-error hover:bg-error-container/20 rounded transition-colors"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div></header><aside class="fixed left-0 top-14 bottom-9 w-60 z-40 bg-surface-container-low/95 backdrop-blur-md border-r border-outline-variant/30 flex flex-col overflow-y-auto"><div class="py-space-md px-space-sm flex-1 space-y-space-md"><div class="space-y-1"><div class="px-space-sm pb-1 font-label-caps text-label-caps text-outline uppercase tracking-wider">Workspace</div><nav class="space-y-0.5" data-active-classes="bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm"><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="overview" href="#">Overview</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="my-files" href="#">My Files</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="ai-organizer" href="#">AI Organizer</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="project-detective" href="#">Project Detective</a></nav></div><div class="space-y-1"><div class="px-space-sm pb-1 font-label-caps text-label-caps text-outline uppercase tracking-wider">Migration &amp; Protection</div><nav class="space-y-0.5" data-active-classes="bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm"><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="duplicates" href="#">Duplicates</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="migration-advisor" href="#">Migration Advisor</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="backup-safety" href="#">Backup Safety</a></nav></div><div class="space-y-1"><div class="px-space-sm pb-1 font-label-caps text-label-caps text-outline uppercase tracking-wider">Assistant &amp; Inbox</div><nav class="space-y-0.5" data-active-classes="bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm"><a aria-current="page" class="flex items-center justify-between px-space-sm py-1.5 transition-colors bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm" data-path="ai-assistant" href="#"><span>AI Assistant</span><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span><span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded-full bg-tertiary-container/20 text-tertiary border border-tertiary/30 font-semibold">Ready</span></span></a><a class="flex items-center justify-between px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="new-items-inbox" href="#"><span>New Items Inbox</span><span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-semibold">1 New</span></a></nav></div><div class="space-y-1"><div class="px-space-sm pb-1 font-label-caps text-label-caps text-outline uppercase tracking-wider">Tools &amp; Scripts</div><nav class="space-y-0.5" data-active-classes="bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm"><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="script-runner-and-terminal" href="#">Script Runner &amp; Terminal</a></nav></div><div class="space-y-1"><div class="px-space-sm pb-1 font-label-caps text-label-caps text-outline uppercase tracking-wider">Activity &amp; Settings</div><nav class="space-y-0.5" data-active-classes="bg-secondary-container text-on-secondary-container font-body-bold rounded-lg shadow-sm"><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="activity-log" href="#">Activity Log</a><a class="block px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-body-base text-body-base transition-colors" data-path="settings-and-privacy" href="#">Settings &amp; Privacy</a></nav></div></div></aside><div class="pl-60 pb-9"><main class="pt-14 w-full min-h-[calc(100vh-56px)] bg-surface-container-lowest p-gutter-desktop"><div class="flex flex-col w-full">
+<!-- Top Mission Control Context Strip -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low rounded-xl shadow-md mb-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded-lg shadow-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[15px] shrink-0">inventory_2</span>
+<span class="font-code-sm text-code-sm text-on-surface truncate">
+          Scope: <span class="text-primary font-semibold">D:\Workspace\Academic_Projects</span>
+<span class="text-outline mx-1">•</span>
+<span class="text-tertiary">14,280 files</span> local index
+        </span>
+</div>
+<div class="hidden xl:flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-code-sm text-code-sm text-secondary">Local MiniLM + On-Device Gemma 2B (Air-Gapped)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex items-center bg-surface-container rounded-lg p-0.5 shadow-inner">
+<button class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm font-semibold shadow-sm">EN</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm">FR</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm font-sans" title="RTL Enabled">العربية</button>
+</div>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase transition-colors shadow-sm" id="exportSessionBtn">
+<span class="material-symbols-outlined text-[15px]">file_download</span>
+<span>Export Session</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container hover:bg-error-container/40 text-on-surface-variant hover:text-error font-label-caps text-label-caps uppercase transition-colors shadow-sm" id="clearChatBtn">
+<span class="material-symbols-outlined text-[15px]">delete_sweep</span>
+<span>Clear Log</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-label-caps text-label-caps uppercase transition-colors shadow-sm" id="toggleDrawerBtn" title="Toggle File Context Drawer">
+<span class="material-symbols-outlined text-[16px]">dock_to_left</span>
+<span class="hidden sm:inline">Context Deck</span>
+</button>
+</div>
+</div>
+<!-- Primary Workspace Split: Stream + Inspector Drawer -->
+<div class="flex items-start gap-space-md w-full relative">
+<!-- Center Chat Stream Streamline -->
+<div class="flex-1 flex flex-col min-w-0 space-y-space-md">
+<!-- Grounded Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-md">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center shadow-lg shadow-secondary-container/30 shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[22px]">psychology</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface">Hi! I'm your VORQEN AI Assistant</h2>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-semibold">Zero Telemetry</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant mt-0.5">
+              Understand your files. Find what matters. Organize with cryptographic confidence.
+            </p>
+<div class="flex items-center gap-2 mt-2 px-space-sm py-1 rounded-lg bg-surface-container text-outline text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0">shield_lock</span>
+<span>Grounded strictly in local SHA-256 signatures, metadata, and token trees. <strong class="text-on-surface">Nothing moves, translates, or deletes without explicit approval.</strong></span>
+</div>
+</div>
+</div>
+<!-- Quick Telemetry Chips -->
+<div class="mt-space-md pt-space-sm flex flex-wrap gap-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase self-center mr-1">Grounding Prompts:</span>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            🎓 Find my university projects
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            📂 Explain this folder's contents
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            🧬 Find duplicate files
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            🐧 Which files should I keep before migration?
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            📦 Help me organize Downloads
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            ⚖️ Find my large files (&gt;500MB)
+          </button>
+<button class="prompt-chip px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-all hover:-translate-y-0.5 shadow-sm">
+            📑 What is inside this PDF?
+          </button>
+</div>
+</div>
+<!-- Dialogue Stream -->
+<div class="flex flex-col space-y-space-md" id="messageStream">
+<!-- User Query Bubble -->
+<div class="flex items-start justify-end gap-space-sm pl-12">
+<div class="bg-secondary-container text-on-secondary-container px-space-lg py-space-sm rounded-2xl rounded-tr-sm shadow-md max-w-2xl">
+<div class="flex items-center justify-between gap-space-md mb-1 font-code-sm text-code-sm text-secondary-fixed">
+<span class="font-semibold">Operator</span>
+<span>10:42:18 AM</span>
+</div>
+<p class="font-body-base text-body-base leading-relaxed">
+              Which files should I review or relocate before doing the Linux migration? Also what large model files do I have in <code class="bg-surface-container-lowest/40 px-1 py-0.5 rounded font-code-sm text-code-sm">Thesis_2024</code>?
+            </p>
+</div>
+<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center shrink-0 shadow-sm mt-1">
+<span class="material-symbols-outlined text-on-secondary text-[18px]">terminal</span>
+</div>
+</div>
+<!-- Assistant Multi-Part Grounded Response -->
+<div class="flex items-start gap-space-sm pr-6">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 shadow-sm mt-1">
+<span class="material-symbols-outlined text-primary text-[18px]">neurology</span>
+</div>
+<div class="flex-1 bg-surface-container-low rounded-2xl rounded-tl-sm p-space-lg shadow-md space-y-space-md min-w-0">
+<!-- Metadata line -->
+<div class="flex items-center justify-between text-outline font-code-sm text-code-sm pb-1">
+<div class="flex items-center gap-space-xs">
+<span class="text-primary font-semibold">VORQEN Core Engine</span>
+<span>•</span>
+<span>Grounded on 3,412 tokens in Thesis_2024</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-tertiary">Deterministic Pass</span>
+<span>•</span>
+<span>Hash verified 0 ms ago</span>
+</div>
+</div>
+<!-- Descriptive Summary -->
+<div class="font-body-base text-body-base text-on-surface space-y-2">
+<p>
+                I inspected your <code class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container text-primary">Thesis_2024</code> directory against typical Linux ext4 filesystem constraints and platform toolchains.
+              </p>
+<p class="text-on-surface-variant font-body-sm text-body-sm">
+                I discovered <strong class="text-on-surface">1 large ML binary checkpoint (1.2 GB)</strong>, a Windows automation script with native path incompatibilities, and a critical <strong class="text-error">case-sensitive filename collision</strong> that will corrupt files if extracted onto a Linux partition without staging.
+              </p>
+</div>
+<!-- Embedded Citation & File Cards Grid -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Card 1: Large Model File -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-sm shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/30 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">deployed_code</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-bold text-body-bold text-on-surface truncate">weights_yolov8_final.pt</span>
+<span class="px-1.5 py-0.2 rounded font-code-sm text-code-sm bg-secondary-container text-on-secondary-container font-semibold">1.2 GB</span>
+<span class="font-code-sm text-code-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant">PyTorch Binary Checkpoint</span>
+</div>
+<p class="font-code-sm text-code-sm text-outline truncate mt-0.5">
+                      .../Thesis_2024/thesis_ocr/models/weights_yolov8_final.pt
+                    </p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase transition-colors shadow-sm" title="Reveal in native explorer">
+                    Open in Folder
+                  </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase transition-colors shadow-sm" title="Compute and inspect SHA256">
+                    Verify Checksum
+                  </button>
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase font-semibold transition-colors shadow-sm">
+                    Inspect Tensors
+                  </button>
+</div>
+</div>
+<!-- Card 2: Windows Script Needs Bash Translation -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-sm shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-error-container/30 flex items-center justify-center shrink-0 text-error">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-bold text-body-bold text-on-surface truncate">run_pipeline.bat</span>
+<span class="px-1.5 py-0.2 rounded font-code-sm text-code-sm bg-error-container text-on-error-container font-semibold">CRLF / Windows Batch</span>
+<span class="font-code-sm text-code-sm text-error">Contains hardcoded C:\ paths</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                      Recommendation: Auto-translate to POSIX compliance <code class="font-code-sm text-code-sm text-primary">run_pipeline.sh</code> with LF delimiters.
+                    </p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-primary font-label-caps text-label-caps uppercase transition-colors shadow-sm">
+                    AST Translate to .sh
+                  </button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase transition-colors shadow-sm">
+                    View Diff
+                  </button>
+</div>
+</div>
+<!-- Card 3: Case Collision Hazard -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-sm shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/40 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">warning_amber</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-body-bold text-body-bold text-on-surface truncate">data_clean.csv</span>
+<span class="text-outline font-code-sm text-code-sm">collides with</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">Data_clean.csv</span>
+<span class="px-1.5 py-0.2 rounded font-code-sm text-code-sm bg-surface-container-highest text-secondary font-semibold">Ext4 Case Collision</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                      Windows NTFS is case-insensitive; Linux will treat these as two separate files in the same directory.
+                    </p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase transition-colors shadow-sm">
+                    Auto-Rename Safe
+                  </button>
+</div>
+</div>
+</div>
+<!-- Safe Action Plan Box (Grounded simulation) -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-inner space-y-space-sm">
+<div class="flex items-center justify-between flex-wrap gap-2 pb-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Proposed Safe Action Plan (Staged for Review - 0 bytes written)</span>
+</div>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-medium">Ready for Dry-Run</span>
+</div>
+<!-- Table Manifest Simulation -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-code-sm text-code-sm">
+<thead>
+<tr class="text-outline bg-surface-container-low/70">
+<th class="p-2 rounded-l-lg">Original NTFS Path</th>
+<th class="p-2">Target Linux Ext4</th>
+<th class="p-2">Planned Action</th>
+<th class="p-2 rounded-r-lg">Safety Assurance</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 text-on-surface">
+<tr class="hover:bg-surface-container-high/30 transition-colors">
+<td class="p-2 font-mono text-on-surface-variant truncate max-w-[200px]">.../Thesis_2024/run_pipeline.bat</td>
+<td class="p-2 text-primary font-mono truncate max-w-[200px]">.../thesis_2024/run_pipeline.sh</td>
+<td class="p-2"><span class="px-1.5 py-0.5 rounded bg-secondary-container/50 text-secondary">POSIX Convert</span></td>
+<td class="p-2 text-tertiary">Retains original as .bat.bak</td>
+</tr>
+<tr class="hover:bg-surface-container-high/30 transition-colors">
+<td class="p-2 font-mono text-on-surface-variant truncate max-w-[200px]">.../Thesis_2024/Data_clean.csv</td>
+<td class="p-2 text-primary font-mono truncate max-w-[200px]">.../thesis_2024/data_clean_v2.csv</td>
+<td class="p-2"><span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface">Rename Collision</span></td>
+<td class="p-2 text-tertiary">Preserves distinct checksum</td>
+</tr>
+<tr class="hover:bg-surface-container-high/30 transition-colors">
+<td class="p-2 font-mono text-on-surface-variant truncate max-w-[200px]">.../weights_yolov8_final.pt</td>
+<td class="p-2 text-primary font-mono truncate max-w-[200px]">/opt/models/thesis/weights.pt</td>
+<td class="p-2"><span class="px-1.5 py-0.5 rounded bg-tertiary-container/30 text-on-tertiary-container font-semibold">Symlink Stage</span></td>
+<td class="p-2 text-tertiary">Zero duplicate disk usage</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Safety Notice & Primary Approval Triggers -->
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-outline">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span><strong>VORQEN Guarantee:</strong> No disk writes happen until you approve.</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm transition-colors shadow-sm">
+                    Review in Migration Advisor
+                  </button>
+<button class="flex items-center gap-1.5 px-space-xl py-1.5 rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary font-body-bold text-body-bold shadow-md shadow-primary/20 hover:brightness-110 active:scale-95 transition-all" id="approvePlanBtn">
+<span class="material-symbols-outlined text-[17px]">check_circle</span>
+<span>Approve Staged Plan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Feedback / Followup bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-xs text-outline font-code-sm text-code-sm">
+<span>Was this resolution helpful?</span>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container-high"><span class="material-symbols-outlined text-[15px]">thumb_up</span></button>
+<button class="p-1 hover:text-on-surface rounded hover:bg-surface-container-high"><span class="material-symbols-outlined text-[15px]">thumb_down</span></button>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-outline">
+<span>Inference time: 242ms</span>
+<span>•</span>
+<span>RAM: 184MB</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dock Input Component Pinned at Chat Bottom -->
+<div class="sticky bottom-0 bg-surface-container-lowest/95 backdrop-blur-md pt-space-xs pb-1 z-20">
+<div class="bg-surface-container-low rounded-2xl p-space-sm shadow-xl flex flex-col gap-space-xs">
+<!-- Textarea area -->
+<div class="relative">
+<textarea class="w-full bg-transparent text-on-surface placeholder:text-outline font-body-base text-body-base px-space-sm py-1 resize-none focus:outline-none" id="aiPromptInput" placeholder="Ask about your files, codebases, duplicates, or migration readiness... (Press Enter to send, Shift+Enter for new line)" rows="2"></textarea>
+</div>
+<!-- Bottom controls bar inside the pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<!-- Select Scope Context -->
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-code-sm text-code-sm shadow-sm transition-colors">
+<span class="material-symbols-outlined text-primary text-[15px]">snippet_folder</span>
+<span class="truncate max-w-[180px] lg:max-w-[260px]">D:\Workspace\Academic_Projects</span>
+<span class="material-symbols-outlined text-[13px] text-outline">arrow_drop_down</span>
+</button>
+<!-- Quick Modifiers -->
+<div class="flex items-center gap-1 bg-surface-container rounded-lg p-0.5 shadow-sm">
+<button class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm font-medium">All Files</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm">Code Only</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm">PDFs/Docs</button>
+<button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm">Datasets</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="hidden items-center gap-1 px-space-sm py-1.5 rounded-lg bg-error-container/30 text-error hover:bg-error-container hover:text-on-error-container font-label-caps text-label-caps uppercase transition-colors shadow-sm" id="stopGenBtn">
+<span class="material-symbols-outlined text-[15px]">stop</span>
+<span>Halt</span>
+</button>
+<button class="flex items-center justify-center w-9 h-9 rounded-xl bg-secondary-container text-on-secondary-container hover:brightness-110 active:scale-95 shadow-md shadow-secondary-container/20 transition-all" id="sendPromptBtn">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between px-space-sm pt-1.5 text-outline font-code-sm text-code-sm">
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 100% Local Inference</span>
+<span>•</span>
+<span>Read-Only Signature Inspection</span>
+<span>•</span>
+<span>Air-Gapped Privacy</span>
+</div>
+<span class="hidden md:inline">Ctrl + Enter to dispatch immediately</span>
+</div>
+</div>
+</div>
+<!-- Right Drawer: Active Grounding Context (320px collapsible) -->
+<div class="w-80 shrink-0 flex flex-col gap-space-md transition-all duration-200" id="contextDrawer">
+<!-- Grounding Telemetry Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+<span class="font-title-sm text-title-sm text-on-surface">Grounding Context</span>
+</div>
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container text-tertiary font-semibold">Active</span>
+</div>
+<!-- Telemetry Key-Value Matrix -->
+<div class="space-y-space-xs font-code-sm text-code-sm">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container shadow-sm">
+<span class="text-on-surface-variant">Monitored Root</span>
+<span class="text-primary truncate max-w-[150px]" title="D:\Workspace\Academic_Projects">.../Academic_Projects</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container shadow-sm">
+<span class="text-on-surface-variant">Indexed Files</span>
+<span class="text-on-surface font-semibold">14,280 (42.1 GB)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container shadow-sm">
+<span class="text-on-surface-variant">Safe Mode State</span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              Enforced (Approval Req.)
+            </span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container shadow-sm">
+<span class="text-on-surface-variant">Embedding Engine</span>
+<span class="text-secondary font-mono">MiniLM-L6-v2.q4</span>
+</div>
+</div>
+<!-- Active Filter Tokens -->
+<div class="space-y-1.5">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Active Context Scope</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/40 text-secondary font-code-sm text-code-sm flex items-center gap-1">
+<span>Thesis_2024</span>
+<button class="hover:text-on-surface"><span class="material-symbols-outlined text-[12px]">close</span></button>
+</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center gap-1">
+<span>ML Models (.pt, .onnx)</span>
+<button class="hover:text-on-surface"><span class="material-symbols-outlined text-[12px]">close</span></button>
+</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center gap-1">
+<span>Batch Scripts (.bat)</span>
+<button class="hover:text-on-surface"><span class="material-symbols-outlined text-[12px]">close</span></button>
+</span>
+</div>
+</div>
+</div>
+<!-- Recent File References Deck -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm flex-1">
+<div class="flex items-center justify-between pb-1">
+<span class="font-title-sm text-title-sm text-on-surface">Recent Referenced Files</span>
+<span class="font-code-sm text-code-sm text-outline">3 items</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Ref 1 -->
+<div class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">terminal</span>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold truncate">run_pipeline.bat</span>
+<span class="font-code-sm text-code-sm text-outline">4.1 KB</span>
+</div>
+<p class="font-code-sm text-code-sm text-error truncate">CRLF • Windows Path Incompat.</p>
+</div>
+</div>
+<!-- Ref 2 -->
+<div class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">deployed_code</span>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold truncate">weights_yolov8_final.pt</span>
+<span class="font-code-sm text-code-sm text-outline">1.2 GB</span>
+</div>
+<p class="font-code-sm text-code-sm text-tertiary truncate">PyTorch Binary • Checksum OK</p>
+</div>
+</div>
+<!-- Ref 3 -->
+<div class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">difference</span>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface font-semibold truncate">Data_clean.csv</span>
+<span class="font-code-sm text-code-sm text-outline">890 KB</span>
+</div>
+<p class="font-code-sm text-code-sm text-secondary truncate">Case collision risk (ext4)</p>
+</div>
+</div>
+</div>
+<!-- Diagnostic Mini Bar Chart: Token Grounding Usage -->
+<div class="pt-space-sm mt-space-sm space-y-1.5">
+<div class="flex items-center justify-between font-code-sm text-code-sm text-outline">
+<span>Context Window Allocation</span>
+<span class="text-on-surface">3,412 / 8,192 tokens</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 41%;"></div>
+<div class="h-full bg-secondary" style="width: 14%;"></div>
+<div class="h-full bg-tertiary" style="width: 8%;"></div>
+</div>
+<div class="flex items-center justify-between text-[10px] font-code-sm text-outline pt-0.5">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Path metadata</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> AST scripts</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Free headroom</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initVorqenAssistant() {
+    const input = document.getElementById('aiPromptInput');
+    const sendBtn = document.getElementById('sendPromptBtn');
+    const stopBtn = document.getElementById('stopGenBtn');
+    const stream = document.getElementById('messageStream');
+    const clearBtn = document.getElementById('clearChatBtn');
+    const drawerBtn = document.getElementById('toggleDrawerBtn');
+    const drawer = document.getElementById('contextDrawer');
+    const approveBtn = document.getElementById('approvePlanBtn');
+    const promptChips = document.querySelectorAll('.prompt-chip');
+
+    // Prompt Chips interaction
+    promptChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const text = chip.innerText.replace(/^[^\w\s]+\s*/, '').trim();
+        input.value = text;
+        input.focus();
+      });
+    });
+
+    // Drawer toggle
+    drawerBtn.addEventListener('click', () => {
+      drawer.classList.toggle('hidden');
+    });
+
+    // Approve Button interaction
+    approveBtn.addEventListener('click', () => {
+      approveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span><span>Validating SHA-256...</span>';
+      approveBtn.disabled = true;
+      setTimeout(() => {
+        approveBtn.className = "flex items-center gap-1.5 px-space-xl py-1.5 rounded-lg bg-surface-container-high text-tertiary font-body-bold text-body-bold shadow-md cursor-default";
+        approveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">task_alt</span><span>Plan Approved &amp; Staged</span>';
+      }, 700);
+    });
+
+    // Clear dialog confirmation
+    clearBtn.addEventListener('click', () => {
+      if (confirm('Clear current conversational context and purge local working buffer?')) {
+        stream.innerHTML = '<div class="p-space-md text-center text-outline font-code-sm text-code-sm bg-surface-container rounded-xl">Dialogue memory purged. Indexed scope remains read-only at D:\\Workspace\\Academic_Projects.</div>';
+      }
+    });
+
+    // Send action
+    function dispatchUserMessage() {
+      const query = input.value.trim();
+      if (!query) return;
+
+      // Append User Card
+      const userBubble = document.createElement('div');
+      userBubble.className = "flex items-start justify-end gap-space-sm pl-12";
+      userBubble.innerHTML = `
+        <div class="bg-secondary-container text-on-secondary-container px-space-lg py-space-sm rounded-2xl rounded-tr-sm shadow-md max-w-2xl">
+          <div class="flex items-center justify-between gap-space-md mb-1 font-code-sm text-code-sm text-secondary-fixed">
+            <span class="font-semibold">Operator</span>
+            <span>Just now</span>
+          </div>
+          <p class="font-body-base text-body-base leading-relaxed">${escapeHtml(query)}</p>
+        </div>
+        <div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center shrink-0 shadow-sm mt-1">
+          <span class="material-symbols-outlined text-on-secondary text-[18px]">terminal</span>
+        </div>
+      `;
+      stream.appendChild(userBubble);
+      input.value = '';
+
+      // Toggle state to generating
+      stopBtn.classList.remove('hidden');
+      stopBtn.classList.add('flex');
+      sendBtn.disabled = true;
+
+      // Mock streaming response after brief delay
+      setTimeout(() => {
+        const assistantBubble = document.createElement('div');
+        assistantBubble.className = "flex items-start gap-space-sm pr-6";
+        assistantBubble.innerHTML = `
+          <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 shadow-sm mt-1">
+            <span class="material-symbols-outlined text-primary text-[18px]">neurology</span>
+          </div>
+          <div class="flex-1 bg-surface-container-low rounded-2xl rounded-tl-sm p-space-lg shadow-md space-y-space-md min-w-0">
+            <div class="flex items-center justify-between text-outline font-code-sm text-code-sm pb-1">
+              <span class="text-primary font-semibold">VORQEN Core Engine</span>
+              <span class="text-tertiary">Indexed local metadata verified</span>
+            </div>
+            <div class="font-body-base text-body-base text-on-surface space-y-2">
+              <p>Scanning index for <em>"${escapeHtml(query)}"</em> across 14,280 files...</p>
+              <div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+                <span class="font-code-sm text-code-sm text-outline">SHA256 Match: No rogue duplicate pointers discovered for this filter query.</span>
+                <span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-tertiary-container/30 text-on-tertiary-container">Safe To Proceed</span>
+              </div>
+            </div>
+          </div>
+        `;
+        stream.appendChild(assistantBubble);
+        stream.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        stopBtn.classList.add('hidden');
+        stopBtn.classList.remove('flex');
+        sendBtn.disabled = false;
+      }, 550);
+    }
+
+    sendBtn.addEventListener('click', dispatchUserMessage);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        dispatchUserMessage();
+      }
+    });
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-9 z-50 bg-surface-container-lowest border-t border-outline-variant/30 flex items-center justify-between px-space-md font-code-sm text-code-sm text-on-surface-variant select-none"><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span>Monitored: <span class="text-on-surface font-semibold">D:\Workspace\Academic_Projects</span> (Active)</span></div><span class="text-outline-variant">•</span><div class="flex items-center gap-1.5 text-secondary-fixed-dim"><span class="material-symbols-outlined text-[14px]">lock</span><span>Local Privacy: 100% On-Device / No Cloud Sync</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5"><span class="px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface">0 unapproved</span><span>Changes Pending</span></div><span class="text-outline-variant">•</span><div class="flex items-center gap-1 text-primary-container font-medium"><span class="material-symbols-outlined text-[14px]">verified</span><span>Nothing changes without your explicit approval</span></div></div></footer></body></html>

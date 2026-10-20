@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#4f319c","on-primary-fixed-variant":"#004d61","on-surface-variant":"#bcc8ce","on-tertiary-fixed":"#002114","surface-container":"#1a1f30","tertiary-fixed":"#68fcbf","primary-fixed":"#b8eaff","surface":"#0e1323","on-error-container":"#ffdad6","secondary-container":"#4f319c","primary-container":"#56d6ff","surface-dim":"#0e1323","surface-container-highest":"#2f3446","background":"#0e1323","on-secondary-container":"#bea8ff","inverse-on-surface":"#2b3041","tertiary-fixed-dim":"#45dfa4","outline":"#879398","outline-variant":"#3d494d","surface-container-lowest":"#080d1d","tertiary":"#69fdc0","on-tertiary":"#003825","surface-container-high":"#25293a","secondary-fixed":"#e8ddff","tertiary-container":"#46e0a5","surface-container-low":"#161b2b","surface-bright":"#34394a","on-primary-container":"#005b71","inverse-surface":"#dee1f9","on-secondary-fixed":"#21005e","secondary":"#cebdff","primary":"#baebff","on-tertiary-container":"#005f41","on-background":"#dee1f9","on-surface":"#dee1f9","error-container":"#93000a","on-error":"#690005","surface-tint":"#55d5fe","surface-variant":"#2f3446","on-tertiary-fixed-variant":"#005137","primary-fixed-dim":"#55d5fe","secondary-fixed-dim":"#cebdff","error":"#ffb4ab","on-primary-fixed":"#001f28","inverse-primary":"#006780","on-primary":"#003544","on-secondary":"#381385"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"1.5rem","margin":"1rem","space-md":"0.875rem","space-xl":"1.5rem","gutter-desktop":"1.125rem","space-sm":"0.5rem","space-lg":"1.125rem","gutter":"1rem","space-xs":"0.25rem"},"fontFamily":{"label-caps":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-base":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"stat-lg":["Plus Jakarta Sans"],"body-bold":["Inter"],"code-sm":["JetBrains Mono"],"code-base":["JetBrains Mono"]},"fontSize":{"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"display-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["12.5px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-base":["14px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"400"}],"title-sm":["15px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"stat-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-bold":["14px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"600"}],"code-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"code-base":["13px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 flex flex-col"><div class="h-11 bg-surface-container-lowest flex items-center justify-between px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-sm"><img alt="VORQEN Hexagon Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RvsHW1reZYWm8Xrkl7sYeDcwTePvh2SmeOJcXU2-jPeyU5GtcLldWPhRmsC9njku7iFAUDogxp6rQJyOY1i6BOeIXGkLN-D2l9I6PThq8tgG8CwI8TQielr6RPDp_fHWV2agvPXKMEL4sVuIzPKYKf5uEy3h1-eLyUTHpcChQYOk01qnZllSSj3udZjfT0KpM_gAcrWb3WIC-qe_Go8OlV0Zio1RLvFPQqcGEIfLJ0W1RbvimNH6XIA"/><span class="font-code-sm text-code-sm text-primary tracking-wide">VORQEN v1.4.0 — AI File Intelligence &amp; Safe Migration Assistant</span></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded px-space-xs py-0.5 gap-space-xs"><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container text-primary hover:text-on-surface" type="button">EN</button><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded text-on-surface-variant hover:text-on-surface" type="button">FR</button><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded text-on-surface-variant hover:text-on-surface" type="button">العربية</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex items-center gap-space-xs ml-space-sm"><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Minimize" type="button"><span class="material-symbols-outlined text-[16px]">remove</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Maximize" type="button"><span class="material-symbols-outlined text-[15px]">crop_square</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-error-container hover:text-on-error-container" title="Close" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div></div><div class="h-13 bg-surface-container-low px-space-md flex items-center justify-between shadow-[0_2px_12px_rgba(0,0,0,0.18)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded"><span class="material-symbols-outlined text-primary text-[18px]">folder</span><span class="font-code-base text-code-base text-on-surface font-medium">D:\Workspace\Academic_Projects</span><button class="font-label-caps text-label-caps bg-surface-container-highest text-on-surface px-space-sm py-0.5 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Change Directory</button></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded text-tertiary"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-code-sm text-code-sm">Safe Mode: Nothing changes without your explicit approval</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Last scanned 12 mins ago • 14,280 files indexed</span></div><button class="flex items-center gap-space-xs bg-primary-container text-on-primary-container px-space-md py-space-xs rounded font-body-bold text-body-bold hover:bg-primary hover:text-on-primary transition-colors shadow-[0_2px_8px_rgba(86,214,255,0.2)]" type="button"><span class="material-symbols-outlined text-[18px]">bolt</span><span>Run Smart Scan</span></button></div></div></header><aside class="fixed left-0 top-24 bottom-10 w-60 bg-surface-container-lowest z-40 flex flex-col overflow-y-auto px-space-sm py-space-md shadow-[2px_0_12px_rgba(0,0,0,0.2)]"><nav class="flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">Core</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-files" href="#"><span class="material-symbols-outlined text-[18px]">account_tree</span><span>My Files</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-organizer" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>AI Organizer</span></a></div><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">Intelligence</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="project-detective" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span><span>Project Detective</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="duplicate-detection" href="#"><span class="material-symbols-outlined text-[18px]">difference</span><span>Duplicate Detection</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="migration-advisor" href="#"><span class="material-symbols-outlined text-[18px]">swap_horiz</span><span>Migration Advisor</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ask-your-files" href="#"><span class="material-symbols-outlined text-[18px]">search_insights</span><span>Ask Your Files</span></a></div><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">System &amp; Safety</span><a class="flex items-center justify-between px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-items-inbox" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">inbox</span><span>New Items Inbox</span></div><span class="font-label-caps text-label-caps bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="backup-safety" href="#"><span class="material-symbols-outlined text-[18px]">security</span><span>Backup Safety</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="script-workspace" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span>Script Workspace</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="activity-log" href="#"><span class="material-symbols-outlined text-[18px]">history</span><span>Activity Log</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings-and-privacy" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings &amp; Privacy</span></a></div></nav></aside><div class="pl-60"><main class="relative pt-24 pb-12 w-full px-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Environmental Ambient Glow Layer -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-80 h-80 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Main View Header with Audit Metadata -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-primary px-space-xs py-0.5 rounded bg-surface-container-high tracking-wider uppercase">Cross-Platform Audit Engine</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+            POSIX Kernel Ruleset v4.2 Active
+          </span>
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-secondary-container/40 px-2 py-0.5 rounded-full">SIMULATED DEMO DATA</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Windows-to-Linux Migration Advisor</h1>
+<p class="font-body-base text-body-base text-on-surface-variant">Cross-platform compatibility engine, path delimiter rewriting, script audit &amp; dry-run execution planner.</p>
+</div>
+<!-- Execution CTA Cluster -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded shadow-md transition-all" id="dryRunTrigger" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">science</span>
+<span class="font-body-bold text-body-bold">Run Full Dry-Run (0 B written)</span>
+</button>
+<button class="flex items-center gap-space-xs bg-gradient-to-r from-primary-container to-surface-tint text-on-primary-container px-space-xl py-space-sm rounded shadow-lg shadow-primary-container/20 hover:brightness-110 transition-all" id="stageManifestTrigger" type="button">
+<span class="material-symbols-outlined text-[18px]">rule_folder</span>
+<span class="font-body-bold text-body-bold">Stage Migration Manifest</span>
+</button>
+</div>
+</div>
+<!-- Dual-Control Safety Anchor Banner -->
+<div class="mb-space-lg bg-surface-container-low rounded-lg p-space-md shadow-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded bg-tertiary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface flex items-center gap-2">
+            Dual-Control Safety Enforced
+            <span class="font-label-caps text-label-caps bg-surface-container text-tertiary px-1.5 py-0.5 rounded">SOURCE IMMUTABLE</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Files on the source Windows partition (<span class="font-code-sm text-primary">D:\Workspace\Academic_Projects</span>) are <strong class="text-on-surface font-semibold">NEVER</strong> deleted, overwritten, or modified in-place. All operations execute strictly as copy-and-verify transfers.</p>
+</div>
+</div>
+<div class="hidden lg:flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant shrink-0">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">task_alt</span>
+<span>SHA-256 Pre-Check</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">task_alt</span>
+<span>Rolling Rollback Log</span>
+</div>
+</div>
+</div>
+<!-- Migration Readiness Scoreboard Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-xl">
+<!-- Dial Tile -->
+<div class="lg:col-span-2 bg-surface-container-low rounded-lg p-space-lg shadow-md flex items-center justify-between gap-space-md relative overflow-hidden">
+<div class="flex flex-col justify-between h-full">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Target Compatibility Index</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface font-extrabold tracking-tight">84%</span>
+<span class="font-title-sm text-title-sm text-tertiary font-bold">READY TO MIGRATE</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[240px] mt-2">
+            13,842 of 13,876 items are 100% binary-compatible with target POSIX filesystem specs.
+          </p>
+<div class="flex items-center gap-2 mt-3 pt-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">ext4 / WSL2 Kernel 6.1.28</span>
+</div>
+</div>
+<!-- Inline Visual: SVG Gauge with Segmented Radians -->
+<div class="relative w-36 h-36 flex items-center justify-center shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 120 120">
+<!-- Background Track -->
+<circle class="text-surface-container-highest" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-width="9"></circle>
+<!-- Safe/Emerald Ring Segment -->
+<circle class="text-tertiary-container transition-all duration-1000" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="48.2" stroke-linecap="round" stroke-width="9"></circle>
+<!-- Script Warning/Amber Accent Segment -->
+<circle class="text-secondary transition-all duration-1000" cx="60" cy="60" fill="transparent" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="260" stroke-width="9"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-[28px]">terminal</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">13,876</span>
+<span class="font-label-caps text-[9px] uppercase text-on-surface-variant">Analyzed</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Metric 1: Compatible Files -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col justify-between hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Compatible Files</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<div class="my-2">
+<div class="font-stat-lg text-stat-lg text-on-surface">13,842</div>
+<span class="font-code-sm text-code-sm text-tertiary">99.75% payload safe</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 99.7%"></div>
+</div>
+</div>
+<!-- Telemetry Metric 2: Scripts Flagged -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col justify-between hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Scripts to Review</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">script</span>
+</div>
+<div class="my-2">
+<div class="font-stat-lg text-stat-lg text-on-surface">24</div>
+<span class="font-code-sm text-code-sm text-secondary">.bat / .ps1 scripts</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 18%"></div>
+</div>
+</div>
+<!-- Telemetry Metric 3: Executables & Collisions -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col justify-between hover:-translate-y-0.5 transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Incompatible PE/Collisions</span>
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-stat-lg text-stat-lg text-error">8</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">.exe/.dll</span>
+<span class="font-stat-lg text-stat-lg text-error ml-1">+2</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">case</span>
+</div>
+<span class="font-code-sm text-code-sm text-error">Action required before staging</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 32%"></div>
+</div>
+</div>
+</div>
+<!-- Destination Target Configuration Deck -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-md mb-space-xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md flex-1">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">developer_board</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Mounted Linux Target Environment</span>
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-base text-code-base text-primary font-semibold bg-surface-container px-2 py-0.5 rounded">/home/alex/dev_workspace/</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">storage</span>
+                Filesystem: <strong class="text-on-surface">ext4</strong> (Case-sensitive, POSIX permissions enabled)
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-label-caps text-label-caps bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-md py-space-xs rounded flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">swap_calls</span>
+<span>Switch WSL2 / Remote Host</span>
+</button>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded font-code-sm text-code-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]">speed</span>
+<span>Target Write Rate: ~480 MB/s</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Split Workspace: High-Priority Matrix (Left) + Interactive Diff Inspector (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Compatibility Warnings Matrix & Explanations (1/3) -->
+<div class="flex flex-col gap-space-md xl:col-span-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">warning_amber</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Audit Matrix &amp; Prescriptions</h2>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">3 Categories</span>
+</div>
+<!-- Warning Card 1: Delimiters -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Hardcoded Windows Backslashes</span>
+</div>
+<span class="font-code-sm text-code-sm bg-primary/10 text-primary px-1.5 py-0.5 rounded">12 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Configuration files contain drive letters like <code class="font-code-sm text-on-surface bg-surface-container-highest px-1 py-0.5 rounded">C:\Users\Admin\...</code> which cause instant runtime crash loops on Linux.
+          </p>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant truncate">Auto-rewrite rule: <span class="text-tertiary">/home/alex/dev_workspace/...</span></span>
+<button class="text-primary hover:text-on-primary-container shrink-0 ml-2 font-semibold" id="viewInstancesBtn" type="button">View 12 instances</button>
+</div>
+</div>
+<!-- Warning Card 2: Batch Scripts -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Windows Batch Executables (.bat)</span>
+</div>
+<span class="font-code-sm text-code-sm bg-secondary/10 text-secondary px-1.5 py-0.5 rounded">24 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Shell commands <code class="font-code-sm text-on-surface bg-surface-container-highest px-1 py-0.5 rounded">start_server.bat</code> cannot parse. AI Organizer synthesized POSIX Bash counterparts with <code class="font-code-sm text-tertiary bg-surface-container-highest px-1 py-0.5 rounded">chmod +x</code> flag.
+          </p>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant truncate">Generated: <span class="text-secondary font-mono">start_server.sh</span></span>
+<button class="text-secondary hover:text-secondary-fixed shrink-0 ml-2 font-semibold flex items-center gap-1" id="previewBashBtn" type="button">
+<span class="material-symbols-outlined text-[15px]">code</span>
+<span>Preview Bash</span>
+</button>
+</div>
+</div>
+<!-- Warning Card 3: Case Collision -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex flex-col gap-space-sm group hover:bg-surface-container transition-colors">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-title-sm text-title-sm text-on-surface">Filename Case-Sensitivity Clash</span>
+</div>
+<span class="font-code-sm text-code-sm bg-error/10 text-error px-1.5 py-0.5 rounded">2 collisions</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Windows NTFS treated <code class="font-code-sm text-on-surface bg-surface-container-highest px-1 py-0.5 rounded">Data.CSV</code> and <code class="font-code-sm text-on-surface bg-surface-container-highest px-1 py-0.5 rounded">data.csv</code> as distinct files in subfolders, but copying will trigger silent overwrite collisions on ext4.
+          </p>
+<div class="bg-surface-container-lowest p-2 rounded flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-on-surface-variant truncate">Auto-rename: <span class="text-tertiary">data_case_variant.csv</span></span>
+<button class="text-error hover:text-on-error-container shrink-0 ml-2 font-semibold" id="resolveCaseBtn" type="button">Auto-Rename</button>
+</div>
+</div>
+<!-- Quick Summary Context Visual -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface">Symlink Translation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Windows NTFS Junctions → Unix Softlinks</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary font-bold">Supported (8)</span>
+</div>
+</div>
+<!-- Before / After Code & Path Transformation Inspector (2/3) -->
+<div class="flex flex-col gap-space-md xl:col-span-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">difference</span>
+<h2 class="font-title-sm text-title-sm text-on-surface">Live Transformation Diff Preview</h2>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm">
+<span class="text-on-surface-variant">File:</span>
+<span class="text-on-surface font-semibold bg-surface-container-high px-2 py-0.5 rounded">thesis_ocr\run.bat → run.sh</span>
+</div>
+</div>
+<!-- Code Inspection Viewport -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-xl flex flex-col h-full">
+<!-- Terminal Tab Bar -->
+<div class="bg-surface-container-low px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">AST Translation Diff Engine [Local Safe]</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">PARSED CLEAN</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CRLF → LF (Auto)</span>
+</div>
+</div>
+<!-- Side-by-Side Dual Pane -->
+<div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-outline-variant/30 flex-1">
+<!-- Left Pane: Windows Source -->
+<div class="p-space-md flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-outline-variant/20">
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">window</span>
+                    Source: Windows CMD / Batch
+                  </span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">run.bat</span>
+</div>
+<pre class="font-code-base text-code-base text-on-surface-variant overflow-x-auto space-y-1 py-1"><code><span class="text-outline">1</span>  <span class="text-secondary">@echo off</span></code>
+<code><span class="text-outline">2</span>  <span class="text-secondary">REM</span> Thesis OCR Pipeline Launcher</code>
+<code><span class="text-outline">3</span>  <span class="text-secondary">set</span> PYTHON_PATH=<span class="text-error bg-error/10 px-1 rounded">C:\Python310\python.exe</span></code>
+<code><span class="text-outline">4</span>  <span class="text-secondary">set</span> DATA_DIR=<span class="text-error bg-error/10 px-1 rounded">D:\Workspace\Academic_Projects\data</span></code>
+<code><span class="text-outline">5</span>  </code>
+<code><span class="text-outline">6</span>  <span class="text-secondary">if not exist</span> %DATA_DIR% (</code>
+<code><span class="text-outline">7</span>    <span class="text-secondary">mkdir</span> %DATA_DIR%</code>
+<code><span class="text-outline">8</span>  )</code>
+<code><span class="text-outline">9</span>  %PYTHON_PATH% main.py --config <span class="text-error bg-error/10 px-1 rounded">.\config.ini</span></code>
+<code><span class="text-outline">10</span> <span class="text-secondary">pause</span></code>
+</pre>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Encoding: Windows-1252 (CRLF)</span>
+<span class="text-error">Cannot execute on ext4</span>
+</div>
+</div>
+<!-- Right Pane: Proposed Linux Destination -->
+<div class="p-space-md flex flex-col justify-between bg-surface-container-low/30">
+<div>
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-outline-variant/20">
+<span class="font-code-sm text-code-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">terminal</span>
+                    Proposed: Linux POSIX Bash
+                  </span>
+<span class="font-label-caps text-[10px] text-tertiary bg-tertiary/10 px-1.5 py-0.5 rounded uppercase">run.sh (chmod +x)</span>
+</div>
+<pre class="font-code-base text-code-base text-on-surface overflow-x-auto space-y-1 py-1"><code><span class="text-outline">1</span>  <span class="text-tertiary">#!/usr/bin/env bash</span></code>
+<code><span class="text-outline">2</span>  <span class="text-outline"># Thesis OCR Pipeline Launcher (Auto-Converted)</span></code>
+<code><span class="text-outline">3</span>  PYTHON_PATH=<span class="text-tertiary bg-tertiary/10 px-1 rounded">"$(which python3)"</span></code>
+<code><span class="text-outline">4</span>  DATA_DIR=<span class="text-tertiary bg-tertiary/10 px-1 rounded">"/home/alex/dev_workspace/data"</span></code>
+<code><span class="text-outline">5</span>  </code>
+<code><span class="text-outline">6</span>  <span class="text-primary">if</span> [ ! -d <span class="text-tertiary">"$DATA_DIR"</span> ]; <span class="text-primary">then</span></code>
+<code><span class="text-outline">7</span>    mkdir -p <span class="text-tertiary">"$DATA_DIR"</span></code>
+<code><span class="text-outline">8</span>  <span class="text-primary">fi</span></code>
+<code><span class="text-outline">9</span>  <span class="text-tertiary">"$PYTHON_PATH"</span> main.py --config <span class="text-tertiary bg-tertiary/10 px-1 rounded">./config.ini</span></code>
+<code><span class="text-outline">10</span> <span class="text-outline"># Pause omitted for POSIX shell compatibility</span></code>
+</pre>
+</div>
+<div class="mt-4 pt-2 border-t border-outline-variant/20 flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-tertiary">Permissions: -rwxr-xr-x (0755)</span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Ready to Stage
+                </span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Strip for Selected Script -->
+<div class="bg-surface-container px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">info</span>
+<span>AI will retain source <code class="font-code-sm text-on-surface">run.bat</code> as <code class="font-code-sm text-on-surface">run.bat.bak</code> in target folder.</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface bg-surface-container-high px-space-sm py-1 rounded transition-colors" type="button">Edit Shell Script</button>
+<button class="font-code-sm text-code-sm bg-tertiary-container text-on-tertiary-container font-semibold px-space-md py-1 rounded hover:bg-tertiary transition-colors flex items-center gap-1" id="approveDiffBtn" type="button">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+<span>Accept Proposed .sh</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Migration Staging & Granular Item-by-Item Diff Table -->
+<div class="bg-surface-container-low rounded-lg shadow-md overflow-hidden mb-space-xl flex flex-col">
+<!-- Table Header & Risk Filter Controls -->
+<div class="p-space-lg bg-surface-container flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Migration Staging Manifest</h2>
+<span class="font-code-sm text-code-sm bg-surface-container-high text-primary px-2 py-0.5 rounded">13,876 items queued</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preview path rewrites, binary compatibility checks, and apply granular per-file overrides.</p>
+</div>
+<!-- Filter Segmented Tabs & Search -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Search input -->
+<div class="relative flex items-center bg-surface-container-lowest rounded px-space-sm py-1.5 min-w-[220px]">
+<span class="material-symbols-outlined text-on-surface-variant text-[17px] mr-2">search</span>
+<input class="bg-transparent font-code-sm text-code-sm text-on-surface placeholder-on-surface-variant focus:outline-none w-full" id="manifestSearch" placeholder="Filter paths or extensions..." type="text"/>
+</div>
+<!-- Risk Selector Chips -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded gap-1">
+<button class="filter-chip font-code-sm text-code-sm px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-semibold transition-colors" id="filterAll" type="button">All (13.8k)</button>
+<button class="filter-chip font-code-sm text-code-sm px-2.5 py-1 rounded text-error hover:bg-surface-container-high transition-colors flex items-center gap-1" id="filterHigh" type="button">
+<span>High Risk</span>
+<span class="bg-error/20 px-1 rounded-full text-[10px]">8</span>
+</button>
+<button class="filter-chip font-code-sm text-code-sm px-2.5 py-1 rounded text-secondary hover:bg-surface-container-high transition-colors flex items-center gap-1" id="filterMed" type="button">
+<span>Medium</span>
+<span class="bg-secondary/20 px-1 rounded-full text-[10px]">24</span>
+</button>
+<button class="filter-chip font-code-sm text-code-sm px-2.5 py-1 rounded text-tertiary hover:bg-surface-container-high transition-colors flex items-center gap-1" id="filterSafe" type="button">
+<span>Low/Safe</span>
+<span class="bg-tertiary/20 px-1 rounded-full text-[10px]">13,842</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Table Scroll Viewport -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-space-sm px-space-md w-8">
+<input checked="" class="rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+</th>
+<th class="py-space-sm px-space-md">Source Windows Path</th>
+<th class="py-space-sm px-space-md">Proposed Linux Destination</th>
+<th class="py-space-sm px-space-md">Operation Type</th>
+<th class="py-space-sm px-space-md">Compatibility Risk</th>
+<th class="py-space-sm px-space-md text-right">User Decision</th>
+</tr>
+</thead>
+<tbody class="font-code-sm text-code-sm divide-y divide-outline-variant/15 text-on-surface" id="manifestTableBody">
+<!-- Row 1: Script Conversion -->
+<tr class="manifest-row hover:bg-surface-container/60 transition-colors" data-risk="medium">
+<td class="py-space-md px-space-md">
+<input checked="" class="row-checkbox rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[17px]">description</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">D:\Workspace\Academic_Projects\thesis_ocr\run.bat</span>
+<span class="text-on-surface-variant text-[10px]">Batch Script • 1.4 KB • Windows-1252 CRLF</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-tertiary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">arrow_forward</span>
+<span class="font-semibold">/home/alex/projects/thesis_ocr/run.sh</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-secondary/10 text-secondary px-2 py-0.5 rounded font-label-caps text-[10px]">
+                  Convert Script (chmod 755)
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Medium
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="btn-decision font-code-sm text-code-sm bg-secondary/20 hover:bg-secondary text-secondary hover:text-on-secondary px-space-sm py-1 rounded font-medium transition-all" type="button">
+                  Approve Conversion
+                </button>
+</td>
+</tr>
+<!-- Row 2: Path Delimiters Fix -->
+<tr class="manifest-row hover:bg-surface-container/60 transition-colors" data-risk="safe">
+<td class="py-space-md px-space-md">
+<input checked="" class="row-checkbox rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[17px]">settings_suggest</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">D:\Workspace\Academic_Projects\thesis_ocr\config.ini</span>
+<span class="text-on-surface-variant text-[10px]">Configuration • 4.2 KB • 8 hardcoded backslashes</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-tertiary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">arrow_forward</span>
+<span class="font-semibold">/home/alex/projects/thesis_ocr/config.ini</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-primary/10 text-primary px-2 py-0.5 rounded font-label-caps text-[10px]">
+                  Rewrite Path Delimiters
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Low / Safe
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="btn-decision font-code-sm text-code-sm bg-tertiary/20 hover:bg-tertiary text-tertiary hover:text-on-tertiary px-space-sm py-1 rounded font-medium transition-all" type="button">
+                  Approve Delimiter Fix
+                </button>
+</td>
+</tr>
+<!-- Row 3: Windows PE Executable (High Risk) -->
+<tr class="manifest-row hover:bg-surface-container/60 transition-colors" data-risk="high">
+<td class="py-space-md px-space-md">
+<input class="row-checkbox rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[17px]">cancel_presentation</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">D:\Workspace\tools\winscp.exe</span>
+<span class="text-error text-[10px]">PE32+ Executable • 18.4 MB • Cannot execute natively on Linux</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-outline">
+<span class="italic text-on-surface-variant/70">Flagged: Linux alternative available (OpenSSH / rsync)</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-error/10 text-error px-2 py-0.5 rounded font-label-caps text-[10px]">
+                  Skip Transfer
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 text-error font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  High Risk
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="btn-decision font-code-sm text-code-sm bg-surface-container-high hover:bg-error hover:text-on-error text-error px-space-sm py-1 rounded font-medium transition-all" type="button">
+                  Exclude
+                </button>
+</td>
+</tr>
+<!-- Row 4: Case-Sensitivity Collision Item -->
+<tr class="manifest-row hover:bg-surface-container/60 transition-colors" data-risk="high">
+<td class="py-space-md px-space-md">
+<input checked="" class="row-checkbox rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[17px]">difference</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">D:\Workspace\data\metrics\Data.CSV</span>
+<span class="text-secondary text-[10px]">Collision detected with 'data.csv' in same target folder</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-tertiary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">arrow_forward</span>
+<span class="font-semibold">/home/alex/dev_workspace/metrics/Data_variant.csv</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-secondary/10 text-secondary px-2 py-0.5 rounded font-label-caps text-[10px]">
+                  Collision Auto-Rename
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Collision (ext4)
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="btn-decision font-code-sm text-code-sm bg-surface-container-high hover:bg-secondary text-on-surface px-space-sm py-1 rounded font-medium transition-all" type="button">
+                  Approve Rename
+                </button>
+</td>
+</tr>
+<!-- Row 5: Large Python Dataset (Safe) -->
+<tr class="manifest-row hover:bg-surface-container/60 transition-colors" data-risk="safe">
+<td class="py-space-md px-space-md">
+<input checked="" class="row-checkbox rounded bg-surface-container text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[17px]">dataset</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">D:\Workspace\Academic_Projects\data\corpus_v2.parquet</span>
+<span class="text-on-surface-variant text-[10px]">Binary Dataset • 412.8 MB • POSIX Verified</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md text-tertiary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-tertiary">arrow_forward</span>
+<span class="font-semibold">/home/alex/projects/data/corpus_v2.parquet</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 bg-tertiary/10 text-tertiary px-2 py-0.5 rounded font-label-caps text-[10px]">
+                  Direct Copy &amp; Hash
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Low / Safe
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="btn-decision font-code-sm text-code-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface px-space-sm py-1 rounded font-medium transition-all" type="button">
+                  Direct Copy
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Manifest Table Footer Telemetry & Batch Controls -->
+<div class="bg-surface-container p-space-md flex flex-wrap items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-md font-code-sm text-code-sm">
+<span>Selected: <strong class="text-on-surface" id="selectedCountDisplay">4 items</strong> (412.8 MB)</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>Pending Approvals: <strong class="text-secondary">2 transformations</strong></span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>Excluded: <strong class="text-error">1 PE Binary</strong></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="font-code-sm text-code-sm text-primary hover:text-on-surface bg-surface-container-high px-space-md py-1 rounded transition-colors" type="button">
+            Export Manifest (.json)
+          </button>
+<button class="font-code-sm text-code-sm text-on-secondary-container bg-secondary-container px-space-md py-1 rounded hover:bg-secondary hover:text-on-secondary transition-colors font-semibold" type="button">
+            Batch Approve Safe Transformations
+          </button>
+</div>
+</div>
+</div>
+<!-- Pinned Real-Time Migration Stream Viewport (Bottom Deck) -->
+<div class="bg-surface-container-lowest rounded-lg shadow-xl overflow-hidden mb-space-md">
+<div class="bg-surface-container-low px-space-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[16px]">terminal</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Simulation Stream Telemetry</span>
+<span class="font-code-sm text-code-sm text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">Exit Code: 0 (Simulated)</span>
+</div>
+<div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant">
+<span>Buffer: 4 lines</span>
+<button class="hover:text-on-surface transition-colors" id="clearStreamBtn">Clear</button>
+</div>
+</div>
+<div class="p-space-md font-code-sm text-code-sm space-y-1.5 max-h-36 overflow-y-auto bg-surface-container-lowest text-on-surface" id="simulationConsole">
+<div class="text-outline">[14:32:01.102] <span class="text-primary">[POSIX-CHECK]</span> Analyzing hardcoded backslashes in config.ini... 12 occurrences identified.</div>
+<div class="text-outline">[14:32:01.118] <span class="text-secondary">[CONVERT]</span> Synthesizing run.sh AST from thesis_ocr\run.bat. Shebang: /usr/bin/env bash injected.</div>
+<div class="text-outline">[14:32:01.145] <span class="text-error">[INCOMPATIBLE]</span> WinSCP.exe is a Win32 PE binary. Native POSIX runtime unavailable. Marked for skip.</div>
+<div class="text-outline">[14:32:01.190] <span class="text-tertiary">[SAFE]</span> Dry-run simulation completed. 0 bytes written to host disk. Target staging manifest ready.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Handlers & Dry-Run Micro-Interactions -->
+<script>
+  (function() {
+    const tableBody = document.getElementById('manifestTableBody');
+    const searchInput = document.getElementById('manifestSearch');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+    const selectedCountDisplay = document.getElementById('selectedCountDisplay');
+    const consoleStream = document.getElementById('simulationConsole');
+    const dryRunTrigger = document.getElementById('dryRunTrigger');
+    const stageManifestTrigger = document.getElementById('stageManifestTrigger');
+    const clearStreamBtn = document.getElementById('clearStreamBtn');
+
+    // Filter Logic
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-surface-container-high', 'font-semibold');
+        });
+        chip.classList.add('bg-surface-container-high', 'font-semibold');
+
+        const filterId = chip.id;
+        const rows = document.querySelectorAll('.manifest-row');
+
+        rows.forEach(row => {
+          const risk = row.getAttribute('data-risk');
+          if (filterId === 'filterAll') {
+            row.style.display = '';
+          } else if (filterId === 'filterHigh') {
+            row.style.display = risk === 'high' ? '' : 'none';
+          } else if (filterId === 'filterMed') {
+            row.style.display = risk === 'medium' ? '' : 'none';
+          } else if (filterId === 'filterSafe') {
+            row.style.display = risk === 'safe' ? '' : 'none';
+          }
+        });
+      });
+    });
+
+    // Search Filtering
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('.manifest-row');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+
+    // Select All Toggle
+    if (selectAllCheckbox) {
+      selectAllCheckbox.addEventListener('change', () => {
+        const checked = selectAllCheckbox.checked;
+        rowCheckboxes.forEach(cb => {
+          cb.checked = checked;
+        });
+        updateSelectedCounter();
+      });
+    }
+
+    // Individual Row Checkboxes
+    rowCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        updateSelectedCounter();
+      });
+    });
+
+    function updateSelectedCounter() {
+      const checkedBoxes = document.querySelectorAll('.row-checkbox:checked');
+      if (selectedCountDisplay) {
+        selectedCountDisplay.textContent = `${checkedBoxes.length} items`;
+      }
+    }
+
+    // Dynamic Console Logging Micro-Interaction
+    function appendLog(level, message, colorClass) {
+      if (!consoleStream) return;
+      const now = new Date().toISOString().substring(11, 23);
+      const row = document.createElement('div');
+      row.className = 'text-outline';
+      row.innerHTML = `[${now}] <span class="${colorClass}">[${level}]</span> ${message}`;
+      consoleStream.appendChild(row);
+      consoleStream.scrollTop = consoleStream.scrollHeight;
+    }
+
+    if (dryRunTrigger) {
+      dryRunTrigger.addEventListener('click', () => {
+        appendLog('DRY-RUN', 'Simulating disk write stream: ext4 mounted at /home/alex/dev_workspace/ ...', 'text-primary');
+        setTimeout(() => {
+          appendLog('AUDIT', 'Readiness score recalculation: verified 13,842 files clean.', 'text-tertiary');
+          appendLog('COMPLETED', 'Simulated execution verified. 0 bytes written to source or host.', 'text-tertiary');
+        }, 500);
+      });
+    }
+
+    if (stageManifestTrigger) {
+      stageManifestTrigger.addEventListener('click', () => {
+        appendLog('STAGE', 'Exporting migration manifest to /var/run/vorqen_manifest_ext4.json', 'text-secondary');
+        appendLog('LOCK', 'Safe-Mode confirmation triggered: Waiting for secondary cryptographic sign-off.', 'text-primary');
+      });
+    }
+
+    if (clearStreamBtn && consoleStream) {
+      clearStreamBtn.addEventListener('click', () => {
+        consoleStream.innerHTML = `<div class="text-outline">[${new Date().toISOString().substring(11, 23)}] <span class="text-tertiary">[STREAM]</span> Buffer flushed by user.</div>`;
+      });
+    }
+
+    // Decision Button Micro-Toggles
+    document.querySelectorAll('.btn-decision').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (!this.classList.contains('bg-tertiary')) {
+          this.textContent = 'Approved ✓';
+          this.className = 'btn-decision font-code-sm text-code-sm bg-tertiary text-on-tertiary px-space-sm py-1 rounded font-semibold transition-all';
+          appendLog('APPROVAL', 'Item manually verified and marked staged.', 'text-tertiary');
+        } else {
+          this.textContent = 'Approve';
+          this.className = 'btn-decision font-code-sm text-code-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface px-space-sm py-1 rounded font-medium transition-all';
+        }
+      });
+    });
+
+    const approveDiffBtn = document.getElementById('approveDiffBtn');
+    if (approveDiffBtn) {
+      approveDiffBtn.addEventListener('click', function() {
+        this.innerHTML = '<span class="material-symbols-outlined text-[15px]">verified</span><span>Accepted (Staged)</span>';
+        this.classList.remove('bg-tertiary-container');
+        this.classList.add('bg-tertiary');
+        appendLog('TRANSFORM', 'Auto-converted thesis_ocr\\run.bat to run.sh (chmod 755 approved)', 'text-tertiary');
+      });
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-10 bg-surface-container-lowest z-50 flex items-center justify-between px-space-md shadow-[0_-1px_8px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg font-code-sm text-code-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[15px]">visibility</span><span>3 directories actively monitored</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[15px]">memory</span><span>AI Engine: Local Embedded Model (Offline Safe)</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[15px]">lock</span><span>Unapproved Disk Modifications: 0 (Read-Only)</span></div></div><div class="flex items-center gap-space-sm bg-surface-container px-space-md py-1 rounded shadow-md"><span class="material-symbols-outlined text-primary text-[16px]">notification_important</span><span class="font-code-sm text-code-sm text-on-surface">New folder detected: 'Deep Learning Project'</span><div class="flex items-center gap-space-xs ml-space-xs"><button class="font-label-caps text-label-caps text-primary hover:text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high transition-colors" type="button">Add Details</button><button class="font-label-caps text-label-caps text-tertiary hover:text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high transition-colors" type="button">Organize</button><button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface px-space-xs py-0.5 rounded transition-colors" type="button">Dismiss</button></div></div></footer></body></html>

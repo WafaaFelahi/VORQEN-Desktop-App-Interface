@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#4f319c","on-primary-fixed-variant":"#004d61","on-surface-variant":"#bcc8ce","on-tertiary-fixed":"#002114","surface-container":"#1a1f30","tertiary-fixed":"#68fcbf","primary-fixed":"#b8eaff","surface":"#0e1323","on-error-container":"#ffdad6","secondary-container":"#4f319c","primary-container":"#56d6ff","surface-dim":"#0e1323","surface-container-highest":"#2f3446","background":"#0e1323","on-secondary-container":"#bea8ff","inverse-on-surface":"#2b3041","tertiary-fixed-dim":"#45dfa4","outline":"#879398","outline-variant":"#3d494d","surface-container-lowest":"#080d1d","tertiary":"#69fdc0","on-tertiary":"#003825","surface-container-high":"#25293a","secondary-fixed":"#e8ddff","tertiary-container":"#46e0a5","surface-container-low":"#161b2b","surface-bright":"#34394a","on-primary-container":"#005b71","inverse-surface":"#dee1f9","on-secondary-fixed":"#21005e","secondary":"#cebdff","primary":"#baebff","on-tertiary-container":"#005f41","on-background":"#dee1f9","on-surface":"#dee1f9","error-container":"#93000a","on-error":"#690005","surface-tint":"#55d5fe","surface-variant":"#2f3446","on-tertiary-fixed-variant":"#005137","primary-fixed-dim":"#55d5fe","secondary-fixed-dim":"#cebdff","error":"#ffb4ab","on-primary-fixed":"#001f28","inverse-primary":"#006780","on-primary":"#003544","on-secondary":"#381385"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"1.5rem","margin":"1rem","space-md":"0.875rem","space-xl":"1.5rem","gutter-desktop":"1.125rem","space-sm":"0.5rem","space-lg":"1.125rem","gutter":"1rem","space-xs":"0.25rem"},"fontFamily":{"label-caps":["JetBrains Mono"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-base":["Inter"],"title-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"stat-lg":["Plus Jakarta Sans"],"body-bold":["Inter"],"code-sm":["JetBrains Mono"],"code-base":["JetBrains Mono"]},"fontSize":{"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"display-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["12.5px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-base":["14px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"400"}],"title-sm":["15px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"stat-lg":["18px",{"lineHeight":"24px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-bold":["14px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"600"}],"code-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"code-base":["13px",{"lineHeight":"21px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 z-50 flex flex-col"><div class="h-11 bg-surface-container-lowest flex items-center justify-between px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="flex items-center gap-space-sm"><img alt="VORQEN Hexagon Shield Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RvsHW1reZYWm8Xrkl7sYeDcwTePvh2SmeOJcXU2-jPeyU5GtcLldWPhRmsC9njku7iFAUDogxp6rQJyOY1i6BOeIXGkLN-D2l9I6PThq8tgG8CwI8TQielr6RPDp_fHWV2agvPXKMEL4sVuIzPKYKf5uEy3h1-eLyUTHpcChQYOk01qnZllSSj3udZjfT0KpM_gAcrWb3WIC-qe_Go8OlV0Zio1RLvFPQqcGEIfLJ0W1RbvimNH6XIA"/><span class="font-code-sm text-code-sm text-primary tracking-wide">VORQEN v1.4.0 — AI File Intelligence &amp; Safe Migration Assistant</span></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded px-space-xs py-0.5 gap-space-xs"><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded bg-surface-container text-primary hover:text-on-surface" type="button">EN</button><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded text-on-surface-variant hover:text-on-surface" type="button">FR</button><button class="font-code-sm text-code-sm px-space-xs py-0.5 rounded text-on-surface-variant hover:text-on-surface" type="button">العربية</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex items-center gap-space-xs ml-space-sm"><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Minimize" type="button"><span class="material-symbols-outlined text-[16px]">remove</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" title="Maximize" type="button"><span class="material-symbols-outlined text-[15px]">crop_square</span></button><button class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-error-container hover:text-on-error-container" title="Close" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div></div><div class="h-13 bg-surface-container-low px-space-md flex items-center justify-between shadow-[0_2px_12px_rgba(0,0,0,0.18)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded"><span class="material-symbols-outlined text-primary text-[18px]">folder</span><span class="font-code-base text-code-base text-on-surface font-medium">D:\Workspace\Academic_Projects</span><button class="font-label-caps text-label-caps bg-surface-container-highest text-on-surface px-space-sm py-0.5 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors" type="button">Change Directory</button></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded text-tertiary"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="font-code-sm text-code-sm">Safe Mode: Nothing changes without your explicit approval</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Last scanned 12 mins ago • 14,280 files indexed</span></div><button class="flex items-center gap-space-xs bg-primary-container text-on-primary-container px-space-md py-space-xs rounded font-body-bold text-body-bold hover:bg-primary hover:text-on-primary transition-colors shadow-[0_2px_8px_rgba(86,214,255,0.2)]" type="button"><span class="material-symbols-outlined text-[18px]">bolt</span><span>Run Smart Scan</span></button></div></div></header><aside class="fixed left-0 top-24 bottom-10 w-60 bg-surface-container-lowest z-40 flex flex-col overflow-y-auto px-space-sm py-space-md shadow-[2px_0_12px_rgba(0,0,0,0.2)]"><nav class="flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded"><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">Core</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-files" href="#"><span class="material-symbols-outlined text-[18px]">account_tree</span><span>My Files</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-organizer" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>AI Organizer</span></a></div><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">Intelligence</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="project-detective" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span><span>Project Detective</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-1.5 transition-colors bg-primary-container text-on-primary-container font-semibold rounded" data-path="duplicate-detection" href="#"><span class="material-symbols-outlined text-[18px]">difference</span><span>Duplicate Detection</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="migration-advisor" href="#"><span class="material-symbols-outlined text-[18px]">swap_horiz</span><span>Migration Advisor</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ask-your-files" href="#"><span class="material-symbols-outlined text-[18px]">search_insights</span><span>Ask Your Files</span></a></div><div class="flex flex-col gap-1"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider px-space-sm py-1">System &amp; Safety</span><a class="flex items-center justify-between px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-items-inbox" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">inbox</span><span>New Items Inbox</span></div><span class="font-label-caps text-label-caps bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="backup-safety" href="#"><span class="material-symbols-outlined text-[18px]">security</span><span>Backup Safety</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="script-workspace" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span>Script Workspace</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="activity-log" href="#"><span class="material-symbols-outlined text-[18px]">history</span><span>Activity Log</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded font-body-base text-body-base text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings-and-privacy" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings &amp; Privacy</span></a></div></nav></aside><div class="pl-60"><main class="relative pt-24 pb-12 w-full px-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br from-primary/10 via-tertiary/5 to-transparent blur-3xl"></div>
+<div class="relative z-10 flex flex-col gap-space-sm md:flex-row md:items-center md:justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 rounded bg-surface-container px-space-xs py-0.5 font-code-sm text-code-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span>
+            SHA-256 ENGINE
+          </span>
+<span class="inline-flex items-center gap-1 rounded bg-secondary-container/40 px-space-xs py-0.5 font-code-sm text-code-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[13px]">tune</span>
+            AST SIMILARITY 0.92+
+          </span>
+<span class="inline-flex items-center gap-1 rounded bg-surface-container-highest px-space-xs py-0.5 font-label-caps text-label-caps text-on-surface-variant">
+            SIMULATED DEMO DATA
+          </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Duplicate Detection &amp; True Checksum Verification
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          Byte-by-byte SHA-256 cryptographic verification versus content-similar heuristic matches. Rigorous non-destructive deduplication auditing.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs rounded bg-surface-container-high px-space-md py-space-xs font-body-bold text-body-bold text-on-surface hover:bg-surface-container-highest transition-colors shadow-sm" id="btn-export-manifest" type="button">
+<span class="material-symbols-outlined text-[17px]">download</span>
+<span>Export Report (JSON/CSV)</span>
+</button>
+<button class="flex items-center gap-space-xs rounded bg-primary-container px-space-md py-space-xs font-body-bold text-body-bold text-on-primary-container hover:bg-primary hover:text-on-primary transition-all shadow-md" id="btn-batch-recommend" type="button">
+<span class="material-symbols-outlined text-[17px]">auto_fix_high</span>
+<span>Apply Recommended Primary Copies</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Scanned Files</span>
+<span class="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+</div>
+<div class="mt-2 font-stat-lg text-stat-lg text-on-surface">14,280</div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">Full sector index</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Potential Matches</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">find_in_page</span>
+</div>
+<div class="mt-2 font-stat-lg text-stat-lg text-secondary">28 candidates</div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">Size/Hash pre-screen</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Verified Identical</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<div class="mt-2 font-stat-lg text-stat-lg text-tertiary">14 groups</div>
+<div class="mt-1 font-code-sm text-code-sm text-tertiary/80">SHA-256 byte matched</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md shadow-sm transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary uppercase">Content-Similar</span>
+<span class="material-symbols-outlined text-primary text-[18px]">join_inner</span>
+</div>
+<div class="mt-2 font-stat-lg text-stat-lg text-primary">6 groups</div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">Fuzzy AST/text overlap</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-space-md shadow-sm transition-transform hover:-translate-y-0.5 col-span-2 md:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary-fixed uppercase">Recoverable Space</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]">cleaning_services</span>
+</div>
+<div class="mt-2 font-stat-lg text-stat-lg text-tertiary-fixed">8.42 GB</div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">Non-destructive plan</div>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-surface-container-lowest px-space-md py-space-sm shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex h-7 w-7 items-center justify-center rounded bg-tertiary/10 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-body-bold text-tertiary">Zero-Loss Policy:</strong> No files are removed. Staging a deduplication plan creates a reversible review manifest for the Migration Preview.
+      </span>
+</div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Simulated dry-run sandbox active</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-sm text-title-sm text-on-surface">Duplicate Clusters &amp; Verification Evidence</span>
+<span class="rounded bg-surface-container px-space-xs py-0.5 font-code-sm text-code-sm text-primary">Showing 3 of 20 Clusters</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant">
+<span>SORT BY:</span>
+<button class="rounded bg-surface-container px-space-xs py-0.5 text-primary" type="button">Recoverable Size ↓</button>
+<button class="rounded bg-surface-container-low px-space-xs py-0.5 hover:text-on-surface" type="button">Confidence</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="overflow-hidden rounded-xl bg-surface-container-low shadow-lg transition-all hover:shadow-2xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="flex h-8 w-8 items-center justify-center rounded bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-[18px]">deployed_code</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-on-surface truncate">weights_yolov8_final.pt</span>
+<span class="rounded bg-secondary-container/20 px-space-xs font-code-sm text-code-sm text-secondary">.pt model weights</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Cluster ID: #CL-0842-PT • 1.2 GB per instance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 rounded bg-tertiary/15 px-space-sm py-1 font-code-sm text-code-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+              VERIFIED IDENTICAL BY SHA-256
+            </span>
+<span class="rounded bg-surface-container-highest px-space-sm py-1 font-code-sm text-code-sm text-tertiary-fixed font-semibold">
+              +1.2 GB Recoverable
+            </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-xs rounded bg-surface-container-lowest px-space-md py-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs min-w-0 truncate">
+<span class="text-primary font-bold">SHA-256:</span>
+<span class="truncate font-mono text-on-surface select-all">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span>Exact size: <span class="text-on-surface font-mono">1,241,842,108 bytes</span></span>
+<span class="text-tertiary font-bold">Byte-by-Byte Match: 100%</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="relative flex flex-col justify-between rounded-lg bg-surface-container p-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 rounded bg-tertiary/20 px-space-xs py-0.5 font-label-caps text-label-caps text-tertiary">
+<span class="material-symbols-outlined text-[13px]">star</span> RECOMMENDED PRIMARY
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Modified: Yesterday, 16:42</span>
+</div>
+<div class="mt-2 font-code-base text-code-base text-on-surface break-all select-all font-medium">
+                  D:\Workspace\Academic_Projects\thesis_ocr\models\weights_yolov8_final.pt
+                </div>
+<div class="mt-2 flex flex-wrap gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Git Repo Root</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Referenced in main.py</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">3 commits ahead</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between bg-surface-container-high/40 p-space-xs rounded">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="accent-primary h-4 w-4" name="cluster-1-action" type="radio" value="keep-projects"/>
+<span class="font-body-bold text-body-bold text-on-surface">Keep in Thesis Project (Default)</span>
+</label>
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="relative flex flex-col justify-between rounded-lg bg-surface-container p-space-md shadow-sm opacity-90">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 rounded bg-error-container/40 px-space-xs py-0.5 font-label-caps text-label-caps text-error">
+<span class="material-symbols-outlined text-[13px]">delete_sweep</span> REDUNDANT COPY
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Downloaded: 3 weeks ago</span>
+</div>
+<div class="mt-2 font-code-base text-code-base text-on-surface break-all select-all font-medium">
+                  D:\Workspace\Downloads\weights_yolov8_final (1).pt
+                </div>
+<div class="mt-2 flex flex-wrap gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Orphaned download directory</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">No git tracking</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Stale browser cache</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between bg-surface-container-high/40 p-space-xs rounded">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input class="accent-primary h-4 w-4" name="cluster-1-action" type="radio" value="keep-downloads"/>
+<span class="font-body-base text-body-base text-on-surface-variant">Keep in Downloads only</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer ml-space-sm">
+<input class="accent-primary h-4 w-4" name="cluster-1-action" type="radio" value="keep-both"/>
+<span class="font-body-base text-body-base text-on-surface-variant">Keep Both</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="overflow-hidden rounded-xl bg-surface-container-low shadow-lg transition-all hover:shadow-2xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="flex h-8 w-8 items-center justify-center rounded bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-on-surface truncate">dataset_clean_v1.csv vs dataset_clean_v2.csv</span>
+<span class="rounded bg-primary-container/20 px-space-xs font-code-sm text-code-sm text-primary">.csv tabular</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Cluster ID: #CL-0193-CSV • ~42 MB pool</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 rounded bg-secondary-container/40 px-space-sm py-1 font-code-sm text-code-sm text-secondary">
+<span class="material-symbols-outlined text-[15px]">rule</span>
+              CONTENT SIMILAR - 94% TEXT OVERLAP
+            </span>
+<span class="rounded bg-surface-container-highest px-space-sm py-1 font-code-sm text-code-sm text-on-surface-variant">
+              Human Review Recommended
+            </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="rounded-lg bg-surface-container p-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<div class="font-body-bold text-body-bold text-on-surface">
+                  SHA-256 differs. Diff engine shows 14 rows modified &amp; 3 columns reordered.
+                </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  These files are NOT marked as exact duplicates to prevent data degradation. Content analysis indicates dataset version iteration rather than redundant copies.
+                </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col justify-between rounded-lg bg-surface-container-lowest p-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-primary">v1 (Archive Candidate)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">41.8 MB • 142,000 rows</span>
+</div>
+<div class="font-code-base text-code-base text-on-surface break-all select-all">
+                  D:\Workspace\Academic_Projects\thesis_ocr\data\dataset_clean_v1.csv
+                </div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">
+                  Hash: <span class="font-mono">7cf28b9a...110b</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-lg bg-surface-container-lowest p-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-tertiary">v2 (Updated Revision)</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">42.1 MB • 142,014 rows</span>
+</div>
+<div class="font-code-base text-code-base text-on-surface break-all select-all">
+                  D:\Workspace\Academic_Projects\thesis_ocr\data\dataset_clean_v2.csv
+                </div>
+<div class="mt-1 font-code-sm text-code-sm text-on-surface-variant">
+                  Hash: <span class="font-mono">89a10fc4...99be</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs rounded bg-surface-container-high px-space-md py-space-xs font-body-bold text-body-bold text-primary hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">difference</span>
+<span>View Side-by-Side Diff (14 rows modified)</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="rounded bg-surface-container px-space-md py-space-xs font-body-base text-body-base text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+                Archive v1 to Cold Storage
+              </button>
+<button class="rounded bg-tertiary/20 px-space-md py-space-xs font-body-bold text-body-bold text-tertiary hover:bg-tertiary/30 transition-colors" type="button">
+                Keep Both Versions (Recommended)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<div class="overflow-hidden rounded-xl bg-surface-container-low shadow-lg transition-all hover:shadow-2xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container px-space-lg py-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="flex h-8 w-8 items-center justify-center rounded bg-tertiary/20 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">disc_full</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-on-surface truncate">ubuntu_22.04_server.iso</span>
+<span class="rounded bg-surface-container-highest px-space-xs font-code-sm text-code-sm text-on-surface">.iso disc image</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Cluster ID: #CL-9921-ISO • 3.8 GB identical payload</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 rounded bg-tertiary/15 px-space-sm py-1 font-code-sm text-code-sm text-tertiary">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+              VERIFIED IDENTICAL BY SHA-256
+            </span>
+<span class="rounded bg-surface-container-highest px-space-sm py-1 font-code-sm text-code-sm text-tertiary-fixed font-semibold">
+              +3.8 GB Recoverable
+            </span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-xs rounded bg-surface-container-lowest px-space-md py-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs min-w-0 truncate">
+<span class="text-primary font-bold">SHA-256:</span>
+<span class="truncate font-mono text-on-surface select-all">a4387cb285848a60f99b247fcf1c572cf9042b32524458d34857ef51a7051939</span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span>Exact size: <span class="text-on-surface font-mono">4,089,446,400 bytes</span></span>
+<span class="text-tertiary font-bold">Byte-by-Byte Match: 100%</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col justify-between rounded-lg bg-surface-container p-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 rounded bg-tertiary/20 px-space-xs py-0.5 font-label-caps text-label-caps text-tertiary">
+<span class="material-symbols-outlined text-[13px]">star</span> RECOMMENDED STORAGE LOCATION
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Modified: 4 months ago</span>
+</div>
+<div class="mt-2 font-code-base text-code-base text-on-surface break-all select-all font-medium">
+                  D:\ISOs\ubuntu_22.04_server.iso
+                </div>
+<div class="mt-2 flex flex-wrap gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Central OS Repository</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Shared across 4 Virtual Machines</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between bg-surface-container-high/40 p-space-xs rounded">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input checked="" class="accent-primary h-4 w-4" name="cluster-3-action" type="radio" value="keep-isos"/>
+<span class="font-body-bold text-body-bold text-on-surface">Retain in Central ISOs (Default)</span>
+</label>
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col justify-between rounded-lg bg-surface-container p-space-md shadow-sm opacity-90">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 rounded bg-error-container/40 px-space-xs py-0.5 font-label-caps text-label-caps text-error">
+<span class="material-symbols-outlined text-[13px]">folder_off</span> DUPLICATE INSIDE PROJECT WORKSPACE
+                  </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Modified: 2 months ago</span>
+</div>
+<div class="mt-2 font-code-base text-code-base text-on-surface break-all select-all font-medium">
+                  D:\Workspace\Academic_Projects\vm_backups\ubuntu_22.04_server.iso
+                </div>
+<div class="mt-2 flex flex-wrap gap-space-xs font-code-sm text-code-sm text-on-surface-variant">
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Redundant copy inside active project</span>
+<span class="rounded bg-surface-container-highest px-space-xs py-0.5">Safely replaceable with symlink</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between bg-surface-container-high/40 p-space-xs rounded">
+<label class="flex items-center gap-space-xs cursor-pointer">
+<input class="accent-primary h-4 w-4" name="cluster-3-action" type="radio" value="keep-vm"/>
+<span class="font-body-base text-body-base text-on-surface-variant">Keep in VM Backups</span>
+</label>
+<label class="flex items-center gap-space-xs cursor-pointer ml-space-sm">
+<input class="accent-primary h-4 w-4" name="cluster-3-action" type="radio" value="keep-both"/>
+<span class="font-body-base text-body-base text-on-surface-variant">Keep Both</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky bottom-14 z-30 flex flex-wrap items-center justify-between gap-space-md rounded-xl bg-surface-container-highest/95 p-space-md shadow-2xl backdrop-blur-md">
+<div class="flex items-center gap-space-md">
+<div class="flex h-10 w-10 items-center justify-center rounded bg-primary-container text-on-primary-container font-bold">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-bold text-body-bold text-on-surface">Ready to Stage Deduplication</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">
+          14 verified identical duplicates selected for consolidation • 8.42 GB to be reclaimed
+        </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs rounded bg-surface-container px-space-md py-space-xs font-body-base text-body-base text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px]">restart_alt</span>
+<span>Reset Choices</span>
+</button>
+<button class="flex items-center gap-space-xs rounded bg-gradient-to-r from-primary-container to-primary px-space-xl py-space-sm font-body-bold text-body-bold text-on-primary-container hover:brightness-110 transition-all shadow-lg" id="btn-stage-dedup" type="button">
+<span class="material-symbols-outlined text-[19px]">fact_check</span>
+<span>Stage Deduplication Plan (8.42 GB)</span>
+</button>
+</div>
+</div>
+<div class="fixed right-6 bottom-16 z-50 hidden items-center gap-space-sm rounded-lg bg-surface-container-high px-space-md py-space-sm text-on-surface shadow-2xl" id="toast">
+<span class="material-symbols-outlined text-tertiary text-[18px]">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-message">Manifest staged successfully</span>
+</div>
+</div>
+<script>
+  (function() {
+    const stageBtn = document.getElementById('btn-stage-dedup');
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-message');
+    const exportBtn = document.getElementById('btn-export-manifest');
+    const batchBtn = document.getElementById('btn-batch-recommend');
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastMsg.textContent = msg;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3500);
+    }
+
+    if (stageBtn) {
+      stageBtn.addEventListener('click', () => {
+        showToast('Deduplication plan (8.42 GB) staged for Migration Preview. Zero files deleted.');
+      });
+    }
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        showToast('SHA-256 audit log exported to vorqen_dedup_report.json');
+      });
+    }
+
+    if (batchBtn) {
+      batchBtn.addEventListener('click', () => {
+        const defaultRadios = document.querySelectorAll('input[type="radio"][value*="keep-projects"], input[type="radio"][value*="keep-isos"]');
+        defaultRadios.forEach(r => r.checked = true);
+        showToast('Reset all selections to smart recommended primary copies');
+      });
+    }
+  })();
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-10 bg-surface-container-lowest z-50 flex items-center justify-between px-space-md shadow-[0_-1px_8px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg font-code-sm text-code-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[15px]">visibility</span><span>3 directories actively monitored</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary text-[15px]">memory</span><span>AI Engine: Local Embedded Model (Offline Safe)</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[15px]">lock</span><span>Unapproved Disk Modifications: 0 (Read-Only)</span></div></div><div class="flex items-center gap-space-sm bg-surface-container px-space-md py-1 rounded shadow-md"><span class="material-symbols-outlined text-primary text-[16px]">notification_important</span><span class="font-code-sm text-code-sm text-on-surface">New folder detected: 'Deep Learning Project'</span><div class="flex items-center gap-space-xs ml-space-xs"><button class="font-label-caps text-label-caps text-primary hover:text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high transition-colors" type="button">Add Details</button><button class="font-label-caps text-label-caps text-tertiary hover:text-on-surface px-space-xs py-0.5 rounded bg-surface-container-high transition-colors" type="button">Organize</button><button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface px-space-xs py-0.5 rounded transition-colors" type="button">Dismiss</button></div></div></footer></body></html>

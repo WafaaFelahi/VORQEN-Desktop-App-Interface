@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0e1323;
+  --color-surface-dim: #0e1323;
+  --color-surface-bright: #34394a;
+  --color-surface-container-lowest: #080d1d;
+  --color-surface-container-low: #161b2b;
+  --color-surface-container: #1a1f30;
+  --color-surface-container-high: #25293a;
+  --color-surface-container-highest: #2f3446;
+  --color-on-surface: #dee1f9;
+  --color-on-surface-variant: #bcc8ce;
+  --color-inverse-surface: #dee1f9;
+  --color-inverse-on-surface: #2b3041;
+  --color-outline: #879398;
+  --color-outline-variant: #3d494d;
+  --color-surface-tint: #55d5fe;
+  --color-primary: #baebff;
+  --color-on-primary: #003544;
+  --color-primary-container: #56d6ff;
+  --color-on-primary-container: #005b71;
+  --color-inverse-primary: #006780;
+  --color-secondary: #cebdff;
+  --color-on-secondary: #381385;
+  --color-secondary-container: #4f319c;
+  --color-on-secondary-container: #bea8ff;
+  --color-tertiary: #69fdc0;
+  --color-on-tertiary: #003825;
+  --color-tertiary-container: #46e0a5;
+  --color-on-tertiary-container: #005f41;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #b8eaff;
+  --color-primary-fixed-dim: #55d5fe;
+  --color-on-primary-fixed: #001f28;
+  --color-on-primary-fixed-variant: #004d61;
+  --color-secondary-fixed: #e8ddff;
+  --color-secondary-fixed-dim: #cebdff;
+  --color-on-secondary-fixed: #21005e;
+  --color-on-secondary-fixed-variant: #4f319c;
+  --color-tertiary-fixed: #68fcbf;
+  --color-tertiary-fixed-dim: #45dfa4;
+  --color-on-tertiary-fixed: #002114;
+  --color-on-tertiary-fixed-variant: #005137;
+  --color-background: #0e1323;
+  --color-on-background: #dee1f9;
+  --color-surface-variant: #2f3446;
+
+  --spacing-gutter: 1rem;
+  --spacing-gutter-desktop: 1.125rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.875rem;
+  --spacing-space-lg: 1.125rem;
+  --spacing-space-xl: 1.5rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-desktop: 1.5rem;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #080d1d;
+    color: #dee1f9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-display-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-title-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.font-stat-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-body-base {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-body-bold {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  line-height: 18px;
+}
+
+.font-code-base {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 21px;
+  font-feature-settings: 'tnum' 1;
+}
+
+.font-code-sm {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 16px;
+  font-feature-settings: 'tnum' 1;
+}
+
+.font-label-caps {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* Material Symbols Outlined Font Support */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e1323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25293a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #34394a;
+}

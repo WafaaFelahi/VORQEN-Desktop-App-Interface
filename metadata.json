@@ -1,0 +1,6 @@
+{
+  "name": "VORQEN - AI File Intelligence & Safe Migration Assistant",
+  "description": "High-precision offline desktop workspace for semantic file understanding, duplicate detection, and Windows-to-Linux safe migration with zero silent changes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

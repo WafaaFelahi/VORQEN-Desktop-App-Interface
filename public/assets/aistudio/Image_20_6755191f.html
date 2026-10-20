@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#2b3041", "tertiary-fixed": "#68fcbf", "error-container": "#93000a", "primary-container": "#56d6ff", "on-primary-fixed": "#001f28", "on-tertiary": "#003825", "on-error-container": "#ffdad6", "outline": "#879398", "secondary-container": "#4f319c", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#005137", "surface-dim": "#0e1323", "on-tertiary-fixed": "#002114", "on-surface-variant": "#bcc8ce", "surface-container": "#1a1f30", "on-primary-fixed-variant": "#004d61", "on-error": "#690005", "background": "#0e1323", "outline-variant": "#3d494d", "inverse-surface": "#dee1f9", "surface-container-highest": "#2f3446", "inverse-primary": "#006780", "secondary-fixed": "#e8ddff", "tertiary": "#69fdc0", "on-surface": "#dee1f9", "primary-fixed": "#b8eaff", "tertiary-fixed-dim": "#45dfa4", "secondary": "#cebdff", "surface-tint": "#55d5fe", "on-secondary-container": "#bea8ff", "on-secondary-fixed": "#21005e", "tertiary-container": "#46e0a5", "secondary-fixed-dim": "#cebdff", "primary-fixed-dim": "#55d5fe", "on-primary": "#003544", "primary": "#baebff", "on-tertiary-container": "#005f41", "surface-container-high": "#25293a", "on-secondary-fixed-variant": "#4f319c", "surface": "#0e1323", "surface-container-low": "#161b2b", "on-primary-container": "#005b71", "surface-variant": "#2f3446", "surface-bright": "#34394a", "on-background": "#dee1f9", "on-secondary": "#381385", "surface-container-lowest": "#080d1d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.125rem", "space-md": "0.875rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.125rem" }, "fontFamily": { "body-sm": ["Inter"], "body-base": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-bold": ["Inter"], "label-caps": ["JetBrains Mono"], "code-base": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "display-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "stat-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12.5px", {"lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400"}], "body-base": ["14px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-bold": ["14px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "600"}], "label-caps": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "code-base": ["13px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400"}], "code-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "display-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "700"}], "title-sm": ["15px", {"lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "stat-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } }</script></head><body class="bg-background font-body-base text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 h-11 bg-surface-container-lowest flex items-center justify-between px-space-md select-none z-50"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px]">shield</span><span class="font-headline-md text-headline-md tracking-tight text-on-surface">VORQEN</span></div><span class="font-code-sm text-code-sm text-outline">—</span><span class="font-body-sm text-body-sm text-on-surface-variant">Your files, under control</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-primary text-[14px]">folder</span><span class="font-code-sm text-code-sm text-on-surface">Documents</span><span class="font-code-sm text-code-sm text-outline">(1,248 files)</span></div><div class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant"><button class="text-primary hover:text-on-surface transition-colors" type="button">EN</button><span class="text-outline-variant">|</span><button class="hover:text-on-surface transition-colors" type="button">FR</button><span class="text-outline-variant">|</span><button class="hover:text-on-surface transition-colors" type="button">العربية</button></div><div class="flex items-center gap-space-sm pl-space-md"><button aria-label="Minimize" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center transition-colors" type="button"></button><button aria-label="Maximize" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center transition-colors" type="button"></button><button aria-label="Close" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-error-container flex items-center justify-center transition-colors" type="button"></button></div></div></div><aside class="fixed left-0 top-11 bottom-0 w-60 bg-surface-container-low flex flex-col justify-between p-space-md z-40 overflow-hidden"><div class="flex flex-col gap-space-md overflow-y-auto"><div class="flex items-center gap-space-sm pb-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">verified_user</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm font-bold text-on-surface leading-tight">VORQEN</span><span class="font-code-sm text-code-sm text-outline leading-tight">Files Under Control</span></div></div><nav class="flex flex-col gap-space-md" data-active-classes="bg-surface-container-high text-primary font-body-bold"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Main</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="home" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">home</span><span class="font-body-base text-body-base">Home</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-files" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">folder</span><span class="font-body-base text-body-base">My Files</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary font-body-bold" data-path="organize" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-body-base text-body-base">Organize</span></div><span class="font-code-sm text-code-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full">3 to review</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Protect</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="duplicates" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">content_copy</span><span class="font-body-base text-body-base">Duplicates</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="migration" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-body-base text-body-base">Migration</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="backup" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">verified</span><span class="font-body-base text-body-base">Backup</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">AI</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-assistant" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">qr_code_2</span><span class="font-body-base text-body-base">AI Assistant</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Activity</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-items" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">inbox</span><span class="font-body-base text-body-base">New Items</span></div><span class="font-code-sm text-code-sm bg-tertiary-container text-on-tertiary-container px-space-xs py-0.5 rounded-full">1 new</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="activity-log" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">history</span><span class="font-body-base text-body-base">Activity</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Settings</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-base text-body-base">Settings</span></div></a></div></nav></div><div class="pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">shield_locked</span><p class="font-body-sm text-body-sm text-on-surface-variant">VORQEN never changes your files without your approval.</p></div></div></aside><div class="pl-60"><header class="fixed top-11 left-60 right-0 h-16 bg-surface/90 backdrop-blur-xl z-30 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><span class="hover:text-on-surface transition-colors">Workspace</span><span class="text-outline">/</span><span class="text-on-surface font-body-bold">Active Operations</span></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[18px]">search</span><input class="w-80 h-10 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search your files..." type="text"/></div><button class="flex items-center gap-space-xs h-10 px-space-lg bg-secondary text-on-secondary rounded-lg font-body-bold text-body-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">folder_zip</span><span>Scan a Folder</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 min-h-screen bg-surface px-space-xl pb-24"><div class="flex flex-col w-full">
+<!-- Atmospheric Glow Backdrop (Contained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 right-12 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xl py-space-md">
+<!-- SECTION 1: Top Header & Triage Master Control -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-sm">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">Automated File Organization</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="font-code-sm text-code-sm text-outline">v2.4 Live Classifier</span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">Organize your files</h1>
+<p class="font-body-base text-body-base text-on-surface-variant">
+            VORQEN grouped <span class="text-on-surface font-body-bold">1,248 files</span> into 8 easy categories. You can review them one by one or in batch.
+          </p>
+</div>
+<!-- Master Actions Deck -->
+<div class="flex items-center flex-wrap gap-space-sm shrink-0">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Dry-run active</span>
+</div>
+<button class="flex items-center gap-space-sm h-11 px-space-lg rounded-lg bg-gradient-to-r from-primary-fixed-dim via-primary-container to-surface-tint text-on-primary font-body-bold text-body-bold shadow-md hover:brightness-110 active:scale-[0.99] transition-all" id="auto-triage-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Auto-Triage All</span>
+<span class="bg-on-primary/20 text-on-primary font-code-sm text-code-sm px-space-xs py-0.5 rounded-full">3 to Review</span>
+</button>
+</div>
+</header>
+<!-- SECTION 2: PROJECT DETECTIVE CARD (Unified Workspace Anchor) -->
+<section class="relative rounded-xl bg-surface-container p-space-lg shadow-md overflow-hidden">
+<div class="absolute -right-16 -top-16 w-56 h-56 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<!-- Card Header & Metadata Pill -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                Project Detective Found
+              </span>
+<span class="font-code-sm text-code-sm text-outline">Confidence 96.4%</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Across Documents & Downloads</span>
+</div>
+</div>
+<!-- Project Title & Scope -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Machine Learning Project</h2>
+<span class="font-code-sm text-code-sm bg-surface-container-high text-primary px-space-xs py-0.5 rounded">18 related files</span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-3xl">
+                VORQEN detected 18 scattered files that appear to belong together based on shared project code, import statements, and local folder cross-references.
+              </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-body-base text-body-base hover:bg-surface-bright transition-colors shadow-sm" type="button">
+                Keep as Separate Files
+              </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-body-bold text-body-bold hover:bg-primary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">drive_file_move</span>
+<span>Review Project Group</span>
+</button>
+</div>
+</div>
+<!-- Breakdown File Capsules -->
+<div class="flex items-center flex-wrap gap-space-xs pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-tertiary">description</span>
+              README <span class="text-outline font-label-caps">(1)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-secondary-container/40 font-code-sm text-code-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">code</span>
+              Python scripts <span class="text-on-secondary-container font-label-caps">(6)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high font-code-sm text-code-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">dataset</span>
+              Datasets <span class="text-outline font-label-caps">(2)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-secondary-container/40 font-code-sm text-code-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+              Jupyter Notebooks <span class="text-on-secondary-container font-label-caps">(4)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high font-code-sm text-code-sm text-outline">
+<span class="material-symbols-outlined text-[14px] text-tertiary">memory</span>
+              Model weights <span class="text-outline font-label-caps">(1)</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-md bg-surface-container-high font-code-sm text-code-sm text-outline-variant">
+              +4 other assets
+            </span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CATEGORIES GRID (Overview Mode) -->
+<section class="flex flex-col gap-space-md" id="categories-section">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">File Clusters</h2>
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">7 Generated Sets</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Select a group to verify suggested placements</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Category 1: University & Study (Active/Featured Trigger) -->
+<div class="group relative rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-primary">2.4 GB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">University & Study</h3>
+<span class="font-code-sm text-code-sm text-outline">248 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mostly lecture notes, course slides, and syllabus PDFs.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest group-hover:bg-primary-container group-hover:text-on-primary-container text-on-surface rounded-lg font-body-bold text-body-bold transition-all shadow-sm" onclick="openDrilldown()" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 2: Research & Documents -->
+<div class="group rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">science</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-outline">1.8 GB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">Research & Documents</h3>
+<span class="font-code-sm text-code-sm text-outline">184 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Academic papers, drafts, and citation bibliographies.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded-lg font-body-base text-body-base transition-colors shadow-sm" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 3: Development Projects -->
+<div class="group rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-secondary">4.2 GB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">Development Projects</h3>
+<span class="font-code-sm text-code-sm text-outline">312 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Source code, Git repositories, and configuration files.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded-lg font-body-base text-body-base transition-colors shadow-sm" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 4: Personal Files -->
+<div class="group rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-outline">640 MB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">Personal Files</h3>
+<span class="font-code-sm text-code-sm text-outline">92 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Forms, letters, identification, and personal records.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded-lg font-body-base text-body-base transition-colors shadow-sm" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 5: Images & Screenshots -->
+<div class="group rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-tertiary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">photo_library</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-outline">1.1 GB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">Images & Screenshots</h3>
+<span class="font-code-sm text-code-sm text-outline">215 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Visual assets, diagrams, UI design exports, and screen captures.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded-lg font-body-base text-body-base transition-colors shadow-sm" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 6: Archives & Installers -->
+<div class="group rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-sm hover:shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">package_2</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-low px-space-xs py-1 rounded text-outline">2.1 GB</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface group-hover:text-primary transition-colors">Archives & Installers</h3>
+<span class="font-code-sm text-code-sm text-outline">45 files</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Compressed zip archives, ISOs, and installation setups.
+              </p>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs py-2 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded-lg font-body-base text-body-base transition-colors shadow-sm" type="button">
+<span>Review Category</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Category 7: Needs Review (Alert State) -->
+<div class="group relative rounded-xl bg-surface-container-high p-space-lg flex flex-col justify-between gap-space-md shadow-md md:col-span-2 lg:col-span-3">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">help_center</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm">
+<h3 class="font-title-sm text-title-sm font-bold text-on-surface">Needs Review</h3>
+<span class="font-code-sm text-code-sm bg-error-container text-on-error-container px-space-xs py-0.5 rounded-full font-bold">3 items</span>
+<span class="font-code-sm text-code-sm text-outline">180 MB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+                    Files VORQEN is uncertain about due to mixed contents or conflicting metadata. Needs your quick approval.
+                  </p>
+</div>
+</div>
+<button class="shrink-0 flex items-center justify-center gap-space-sm py-2 px-space-lg bg-surface-container-highest text-on-surface hover:bg-surface-bright rounded-lg font-body-bold text-body-bold transition-all shadow-sm" onclick="openDrilldown()" type="button">
+<span>Review 3 Items</span>
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: EXPANDED DRILLDOWN VIEW (Progressive Disclosure) -->
+<section class="flex flex-col gap-space-md rounded-xl bg-surface-container p-space-lg shadow-xl" id="drilldown-view">
+<!-- Drilldown Control Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm bg-surface-container-high/40 p-space-md rounded-lg">
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs text-outline hover:text-on-surface font-body-sm text-body-sm py-1 px-space-sm rounded bg-surface-container-low transition-colors" onclick="closeDrilldown()" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to All Categories</span>
+</button>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Viewing: University & Study</span>
+<span class="font-code-sm text-code-sm text-primary bg-surface-container-lowest px-space-xs py-0.5 rounded">248 files</span>
+</div>
+</div>
+<!-- Recommendation Legend -->
+<div class="flex items-center gap-space-sm text-outline font-label-caps text-label-caps overflow-x-auto">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> KEEP
+            </span>
+<span>·</span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> ARCHIVE
+            </span>
+<span>·</span>
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> REVIEW
+            </span>
+</div>
+</div>
+<!-- Files Recommendation Breakdown Matrix -->
+<div class="flex flex-col gap-space-sm">
+<!-- File Row 1: KEEP -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-base text-code-base text-on-surface font-bold truncate">lecture_08_distributed_systems.pdf</span>
+<span class="font-code-sm text-code-sm text-outline">4.2 MB</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[12px]">bookmark</span>
+                    KEEP
+                  </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-body-sm text-body-sm text-tertiary font-body-bold">Important study document:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Matched course syllabus and university lecture notes.</span>
+</div>
+</div>
+</div>
+<!-- Row Actions -->
+<div class="flex items-center gap-space-xs shrink-0 self-end lg:self-center">
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-highest text-tertiary hover:bg-tertiary/20 font-body-sm text-body-sm font-body-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Keep ✓</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+                Change to Archive
+              </button>
+</div>
+</div>
+<!-- File Row 2: ARCHIVE -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-base text-code-base text-on-surface font-bold truncate">assignment_2_old_draft.docx</span>
+<span class="font-code-sm text-code-sm text-outline">1.1 MB</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container/40 text-secondary font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[12px]">inventory_2</span>
+                    ARCHIVE
+                  </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-body-sm text-body-sm text-secondary font-body-bold">Useful, but not needed daily:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Older draft superseded by final submission file.</span>
+</div>
+</div>
+</div>
+<!-- Row Actions -->
+<div class="flex items-center gap-space-xs shrink-0 self-end lg:self-center">
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-highest text-secondary hover:bg-secondary-container/40 font-body-sm text-body-sm font-body-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Archive ✓</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">
+                Keep in Folder
+              </button>
+</div>
+</div>
+<!-- File Row 3: REVIEW (UNCERTAIN) -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">table_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-code-base text-code-base text-on-surface font-bold truncate">dataset_sample.csv</span>
+<span class="font-code-sm text-code-sm text-outline">18.4 MB</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-highest text-primary-container font-label-caps text-label-caps font-bold">
+<span class="material-symbols-outlined text-[12px]">help</span>
+                    REVIEW
+                  </span>
+</div>
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-body-sm text-body-sm text-primary font-body-bold">VORQEN is not sure:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Could belong to Machine Learning Project or University coursework.</span>
+</div>
+</div>
+</div>
+<!-- Dual Assign Actions -->
+<div class="flex items-center gap-space-xs shrink-0 self-end lg:self-center">
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-secondary-container/40 text-on-secondary-container hover:bg-secondary-container font-body-sm text-body-sm font-body-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_special</span>
+<span>Assign to Projects</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-highest text-primary hover:bg-surface-bright font-body-sm text-body-sm transition-colors" type="button">
+<span>Assign to University</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pagination / Summary line inside category -->
+<div class="flex items-center justify-between pt-space-xs text-outline font-code-sm text-code-sm">
+<span>Showing 3 of 248 simulated actions</span>
+<button class="text-primary hover:text-on-surface transition-colors font-body-sm text-body-sm" type="button">
+            Expand all 248 recommendations ↓
+          </button>
+</div>
+</section>
+<!-- SECTION 5: Trust Banner & Sovereign Safety Guarantee -->
+<section class="rounded-xl bg-surface-container-low p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Zero Silent Changes</span>
+<span class="font-label-caps text-label-caps bg-surface-container-highest text-tertiary px-space-xs py-0.5 rounded">Safe Mode</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              No files are moved or altered until you click "Apply Changes". You can undo anytime from the Activity log.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-highest font-body-base text-body-base transition-colors" type="button">
+            Reset Plan
+          </button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-tertiary-container text-on-tertiary-container hover:bg-tertiary font-body-bold text-body-bold transition-all shadow-md active:scale-[0.99]" id="apply-changes-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Apply Changes</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+<script>
+    function openDrilldown() {
+      const drilldown = document.getElementById('drilldown-view');
+      drilldown.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      drilldown.classList.add('bg-surface-container-high');
+      setTimeout(() => {
+        drilldown.classList.remove('bg-surface-container-high');
+      }, 700);
+    }
+
+    function closeDrilldown() {
+      const categories = document.getElementById('categories-section');
+      categories.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    document.getElementById('auto-triage-btn')?.addEventListener('click', function() {
+      this.classList.add('opacity-80');
+      const originalHTML = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Calculating Best Matches...</span>';
+      setTimeout(() => {
+        this.innerHTML = '<span class="material-symbols-outlined text-[18px]">task_alt</span><span>Triage Ready</span>';
+        this.classList.remove('opacity-80');
+      }, 900);
+    });
+
+    document.getElementById('apply-changes-btn')?.addEventListener('click', function() {
+      alert('VORQEN Dry-Run: 1,248 destination targets verified. Ready for batch relocation upon final approval.');
+    });
+  </script>
+</div></main></div><div class="fixed bottom-space-xl right-space-xl w-96 bg-surface-container-high rounded-xl p-space-lg shadow-[0_12px_32px_rgba(0,0,0,0.45)] z-50 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">New Folder Detected</span><button class="text-outline hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></div><div><p class="font-title-sm text-title-sm font-bold text-on-surface truncate">Deep Learning Project</p><p class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Deep Learning Project</p></div><p class="font-body-sm text-body-sm text-on-surface-variant">VORQEN can help you organize it.</p><div class="flex items-center gap-space-sm pt-space-xs"><button class="flex-1 py-1.5 px-space-sm bg-surface-container text-on-surface hover:bg-surface-bright font-body-sm text-body-sm rounded-lg transition-colors" type="button">Add Details</button><button class="flex-1 py-1.5 px-space-sm bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm rounded-lg font-body-bold transition-colors" type="button">Organize</button><button class="py-1.5 px-space-sm text-outline hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">Dismiss</button></div></div></body></html>

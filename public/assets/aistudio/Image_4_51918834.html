@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#2b3041", "tertiary-fixed": "#68fcbf", "error-container": "#93000a", "primary-container": "#56d6ff", "on-primary-fixed": "#001f28", "on-tertiary": "#003825", "on-error-container": "#ffdad6", "outline": "#879398", "secondary-container": "#4f319c", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#005137", "surface-dim": "#0e1323", "on-tertiary-fixed": "#002114", "on-surface-variant": "#bcc8ce", "surface-container": "#1a1f30", "on-primary-fixed-variant": "#004d61", "on-error": "#690005", "background": "#0e1323", "outline-variant": "#3d494d", "inverse-surface": "#dee1f9", "surface-container-highest": "#2f3446", "inverse-primary": "#006780", "secondary-fixed": "#e8ddff", "tertiary": "#69fdc0", "on-surface": "#dee1f9", "primary-fixed": "#b8eaff", "tertiary-fixed-dim": "#45dfa4", "secondary": "#cebdff", "surface-tint": "#55d5fe", "on-secondary-container": "#bea8ff", "on-secondary-fixed": "#21005e", "tertiary-container": "#46e0a5", "secondary-fixed-dim": "#cebdff", "primary-fixed-dim": "#55d5fe", "on-primary": "#003544", "primary": "#baebff", "on-tertiary-container": "#005f41", "surface-container-high": "#25293a", "on-secondary-fixed-variant": "#4f319c", "surface": "#0e1323", "surface-container-low": "#161b2b", "on-primary-container": "#005b71", "surface-variant": "#2f3446", "surface-bright": "#34394a", "on-background": "#dee1f9", "on-secondary": "#381385", "surface-container-lowest": "#080d1d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "gutter-desktop": "1.125rem", "space-md": "0.875rem", "margin": "1rem", "space-xs": "0.25rem", "space-lg": "1.125rem" }, "fontFamily": { "body-sm": ["Inter"], "body-base": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-bold": ["Inter"], "label-caps": ["JetBrains Mono"], "code-base": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "display-lg": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "stat-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12.5px", {"lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400"}], "body-base": ["14px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-bold": ["14px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "600"}], "label-caps": ["11px", {"lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600"}], "code-base": ["13px", {"lineHeight": "21px", "letterSpacing": "0em", "fontWeight": "400"}], "code-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "display-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "700"}], "title-sm": ["15px", {"lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "stat-lg": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "700"}] } } } }</script></head><body class="bg-background font-body-base text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 h-11 bg-surface-container-lowest flex items-center justify-between px-space-md select-none z-50"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px]">shield</span><span class="font-headline-md text-headline-md tracking-tight text-on-surface">VORQEN</span></div><span class="font-code-sm text-code-sm text-outline">—</span><span class="font-body-sm text-body-sm text-on-surface-variant">Your files, under control</span></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-primary text-[14px]">folder</span><span class="font-code-sm text-code-sm text-on-surface">Documents</span><span class="font-code-sm text-code-sm text-outline">(1,248 files)</span></div><div class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant"><button class="text-primary hover:text-on-surface transition-colors" type="button">EN</button><span class="text-outline-variant">|</span><button class="hover:text-on-surface transition-colors" type="button">FR</button><span class="text-outline-variant">|</span><button class="hover:text-on-surface transition-colors" type="button">العربية</button></div><div class="flex items-center gap-space-sm pl-space-md"><button aria-label="Minimize" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center transition-colors" type="button"></button><button aria-label="Maximize" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center transition-colors" type="button"></button><button aria-label="Close" class="w-3 h-3 rounded-full bg-surface-container-highest hover:bg-error-container flex items-center justify-center transition-colors" type="button"></button></div></div></div><aside class="fixed left-0 top-11 bottom-0 w-60 bg-surface-container-low flex flex-col justify-between p-space-md z-40 overflow-hidden"><div class="flex flex-col gap-space-md overflow-y-auto"><div class="flex items-center gap-space-sm pb-space-sm"><div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">verified_user</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm font-bold text-on-surface leading-tight">VORQEN</span><span class="font-code-sm text-code-sm text-outline leading-tight">Files Under Control</span></div></div><nav class="flex flex-col gap-space-md" data-active-classes="bg-surface-container-high text-primary font-body-bold"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Main</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="home" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">home</span><span class="font-body-base text-body-base">Home</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="my-files" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">folder</span><span class="font-body-base text-body-base">My Files</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="organize" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-body-base text-body-base">Organize</span></div><span class="font-code-sm text-code-sm bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full">3 to review</span></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Protect</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="duplicates" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">content_copy</span><span class="font-body-base text-body-base">Duplicates</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs rounded-lg transition-colors bg-surface-container-high text-primary font-body-bold" data-path="migration" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-body-base text-body-base">Migration</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="backup" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">verified</span><span class="font-body-base text-body-base">Backup</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">AI</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ai-assistant" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">qr_code_2</span><span class="font-body-base text-body-base">AI Assistant</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Activity</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="new-items" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">inbox</span><span class="font-body-base text-body-base">New Items</span></div><span class="font-code-sm text-code-sm bg-tertiary-container text-on-tertiary-container px-space-xs py-0.5 rounded-full">1 new</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="activity-log" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">history</span><span class="font-body-base text-body-base">Activity</span></div></a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-outline uppercase px-space-sm">Settings</span><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-base text-body-base">Settings</span></div></a></div></nav></div><div class="pt-space-md"><div class="bg-surface-container p-space-md rounded-xl flex items-start gap-space-sm"><span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">shield_locked</span><p class="font-body-sm text-body-sm text-on-surface-variant">VORQEN never changes your files without your approval.</p></div></div></aside><div class="pl-60"><header class="fixed top-11 left-60 right-0 h-16 bg-surface/90 backdrop-blur-xl z-30 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><span class="hover:text-on-surface transition-colors">Workspace</span><span class="text-outline">/</span><span class="text-on-surface font-body-bold">Active Operations</span></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-outline text-[18px]">search</span><input class="w-80 h-10 pl-10 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search your files..." type="text"/></div><button class="flex items-center gap-space-xs h-10 px-space-lg bg-secondary text-on-secondary rounded-lg font-body-bold text-body-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">folder_zip</span><span>Scan a Folder</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 min-h-screen bg-surface px-space-xl pb-24"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/3 w-96 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 right-1/4 w-80 h-40 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Mission Control Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 font-label-caps text-label-caps text-tertiary bg-tertiary-container/20 px-space-sm py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">security</span>
+            DRY-RUN SIMULATION
+          </span>
+<span class="font-code-sm text-code-sm text-outline">SESSION #MIG-2025-081X</span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">
+          Prepare for your new computer
+        </h1>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-2xl">
+          VORQEN checks your files for cross-platform compatibility and prepares a safe backup plan.
+        </p>
+</div>
+<!-- Quick Export & Safe State Capsule -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container rounded-lg text-on-surface hover:bg-surface-container-high transition-colors font-body-sm text-body-sm shadow-sm" type="button">
+<span class="material-symbols-outlined text-primary text-[16px]">file_download</span>
+<span>Export Review Summary</span>
+<span class="font-code-sm text-code-sm text-outline">(PDF/TXT)</span>
+</button>
+</div>
+</div>
+<!-- Stepper Pipeline -->
+<div class="bg-surface-container-low rounded-xl p-space-lg mb-space-xl shadow-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-tertiary">STEP 01</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">Review important files</span>
+<span class="font-code-sm text-code-sm text-outline">24 files identified</span>
+</div>
+</div>
+<!-- Step 2 (Active) -->
+<div class="flex items-center gap-space-md bg-surface-container px-space-md py-space-sm rounded-lg shadow-[0_0_16px_rgba(86,214,255,0.12)]">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 font-stat-lg text-stat-lg font-bold">
+            2
+          </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-caps text-label-caps text-primary">CURRENT</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<span class="font-body-bold text-body-bold text-on-surface truncate">Check compatibility</span>
+<span class="font-code-sm text-code-sm text-primary">3 warnings found</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-center gap-space-md opacity-60">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-outline flex items-center justify-center shrink-0 font-code-base text-code-base">
+            3
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-outline">STEP 03</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">Prepare backup</span>
+<span class="font-code-sm text-code-sm text-outline">Target directory staged</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-center gap-space-md opacity-60">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-outline flex items-center justify-center shrink-0 font-code-base text-code-base">
+            4
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps text-outline">STEP 04</span>
+<span class="font-body-bold text-body-bold text-on-surface truncate">Review changes</span>
+<span class="font-code-sm text-code-sm text-outline">Final approval gate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Status Summary Bento -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<!-- Important Files -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline tracking-wider block">IMPORTANT FILES</span>
+<span class="font-display-lg text-display-lg font-bold text-on-surface mt-1 block">24</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified</span>
+            Safe to copy directly
+          </span>
+<span class="font-code-sm text-code-sm text-outline">4.2 GB</span>
+</div>
+</div>
+<!-- Needs Review -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim tracking-wider block">NEEDS REVIEW</span>
+<span class="font-display-lg text-display-lg font-bold text-secondary mt-1 block">5 Items</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-secondary-fixed-dim">Windows-specific adjustments</span>
+<span class="font-code-sm text-code-sm bg-secondary-container/30 text-secondary px-space-xs py-0.5 rounded">Action needed</span>
+</div>
+</div>
+<!-- Ready to Back Up -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary tracking-wider block">READY TO BACK UP</span>
+<span class="font-display-lg text-display-lg font-bold text-tertiary mt-1 block">19 Items</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+            100% cross-platform ready
+          </span>
+<span class="font-code-sm text-code-sm text-outline">No alterations</span>
+</div>
+</div>
+</div>
+<!-- Non-destructive Safe Mode Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">lock_reset</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">Safe Mode Enforced</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All files are copied to the destination. Your original Windows files are never deleted or modified.</span>
+</div>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container px-space-md py-1 rounded-full text-tertiary shrink-0">
+        ZERO_DESTRUCTIVE_OPS = TRUE
+      </span>
+</div>
+<!-- Two-column Layout: Warnings and Interactive Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-xl">
+<!-- Left: Plain Language Compatibility Warnings -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+<h2 class="font-title-sm text-title-sm font-bold text-on-surface">Plain-Language Compatibility Warnings</h2>
+</div>
+<span class="font-code-sm text-code-sm text-outline">3 items</span>
+</div>
+<!-- Warning 1: .bat conversion -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-secondary-container/40 text-secondary px-2 py-0.5 rounded font-bold">.bat</span>
+<div>
+<h3 class="font-body-bold text-body-bold text-on-surface">Windows script (.bat)</h3>
+<p class="font-code-sm text-code-sm text-outline truncate max-w-[200px]">run_pipeline.bat</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary-fixed bg-secondary-container px-2 py-0.5 rounded-full">Script Fix</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            This file is written for Windows Command Prompt. On Linux, it won't run directly without being converted to a Linux shell script (<code class="font-code-sm text-primary">.sh</code>).
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm bg-primary-container text-on-primary-container hover:bg-primary font-body-sm text-body-sm font-body-bold rounded-lg transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">transform</span>
+<span>View Converted Preview</span>
+</button>
+<button class="py-1.5 px-space-md bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" type="button">
+              Keep as-is
+            </button>
+</div>
+</div>
+<!-- Warning 2: Windows Backslashes -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-primary-container/20 text-primary px-2 py-0.5 rounded font-bold">.ini</span>
+<div>
+<h3 class="font-body-bold text-body-bold text-on-surface">File path backslashes</h3>
+<p class="font-code-sm text-code-sm text-outline truncate max-w-[200px]">config.ini</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-primary bg-primary-container/30 px-2 py-0.5 rounded-full">Path Syntax</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Contains Windows-style file paths (<code class="font-code-sm text-outline">C:\Users\...</code>). VORQEN can update them to standard Linux paths (<code class="font-code-sm text-tertiary">/home/user/...</code>).
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm bg-primary text-on-primary hover:bg-primary-fixed font-body-sm text-body-sm font-body-bold rounded-lg transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span>
+<span>Auto-Update Paths</span>
+</button>
+<button class="py-1.5 px-space-md bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" type="button">
+              Leave Unchanged
+            </button>
+</div>
+</div>
+<!-- Warning 3: Case-sensitive filename collisions -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-sm text-code-sm bg-secondary-container/30 text-secondary px-2 py-0.5 rounded font-bold">.csv</span>
+<div>
+<h3 class="font-body-bold text-body-bold text-on-surface">Similar file names</h3>
+<p class="font-code-sm text-code-sm text-outline truncate max-w-[200px]">Data.csv & data.csv</p>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded-full">Collision Risk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Windows treats these as the same file, but Linux treats them as two different files. VORQEN will safely rename one so nothing is overwritten.
+          </p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 py-1.5 px-space-sm bg-surface-container-highest text-on-surface hover:bg-surface-bright font-body-sm text-body-sm font-body-bold rounded-lg transition-colors flex items-center justify-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+<span>Keep Renamed Copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Detailed Migration Staged Preview Table -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">preview</span>
+<h2 class="font-title-sm text-title-sm font-bold text-on-surface">Staged Changes Preview</h2>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary-container/20 px-space-sm py-0.5 rounded-full">
+            Nothing changed yet!
+          </span>
+</div>
+<div class="bg-surface-container rounded-xl shadow-lg overflow-hidden flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 bg-surface-container-low px-space-lg py-space-sm font-label-caps text-label-caps text-outline uppercase tracking-wider">
+<div class="col-span-4">Original (Windows)</div>
+<div class="col-span-3">New Location (Linux)</div>
+<div class="col-span-2">Planned Action</div>
+<div class="col-span-3 text-right">Reason / Safety Note</div>
+</div>
+<!-- Rows -->
+<div class="divide-y divide-surface-container-low">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 px-space-lg py-space-md hover:bg-surface-container-high/60 transition-colors items-center gap-space-sm">
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-body-bold text-body-bold text-on-surface truncate">run_pipeline.bat</span>
+<span class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Thesis\run_pipeline.bat</span>
+</div>
+<div class="col-span-3 flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-primary text-[14px]">arrow_forward</span>
+<span class="font-code-sm text-code-sm text-tertiary truncate">Backup/Thesis/run_pipeline.sh</span>
+</div>
+<div class="col-span-2">
+<span class="font-code-sm text-code-sm bg-secondary-container/40 text-secondary px-2 py-0.5 rounded inline-block truncate">
+                  Convert to Linux Script
+                </span>
+</div>
+<div class="col-span-3 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Converted Windows batch script to Linux bash</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 px-space-lg py-space-md hover:bg-surface-container-high/60 transition-colors items-center gap-space-sm">
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-body-bold text-body-bold text-on-surface truncate">Data.csv</span>
+<span class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Thesis\Data.csv</span>
+</div>
+<div class="col-span-3 flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-primary text-[14px]">arrow_forward</span>
+<span class="font-code-sm text-code-sm text-tertiary truncate">Backup/Thesis/Data_variant.csv</span>
+</div>
+<div class="col-span-2">
+<span class="font-code-sm text-code-sm bg-primary-container/30 text-primary px-2 py-0.5 rounded inline-block truncate">
+                  Safe Rename
+                </span>
+</div>
+<div class="col-span-3 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Prevents file overwriting on Linux</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 px-space-lg py-space-md hover:bg-surface-container-high/60 transition-colors items-center gap-space-sm">
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-body-bold text-body-bold text-on-surface truncate">weights.pt</span>
+<span class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Thesis\weights.pt</span>
+</div>
+<div class="col-span-3 flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-primary text-[14px]">arrow_forward</span>
+<span class="font-code-sm text-code-sm text-tertiary truncate">Backup/Thesis/weights.pt</span>
+</div>
+<div class="col-span-2">
+<span class="font-code-sm text-code-sm bg-tertiary-container/30 text-tertiary px-2 py-0.5 rounded inline-block truncate">
+                  Copy File
+                </span>
+</div>
+<div class="col-span-3 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Important ML model weights preserved</span>
+</div>
+</div>
+<!-- Row 4 (Supporting context) -->
+<div class="grid grid-cols-12 px-space-lg py-space-md hover:bg-surface-container-high/60 transition-colors items-center gap-space-sm">
+<div class="col-span-4 flex flex-col min-w-0">
+<span class="font-body-bold text-body-bold text-on-surface truncate">dataset_summary.pdf</span>
+<span class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Thesis\dataset_summary.pdf</span>
+</div>
+<div class="col-span-3 flex items-center gap-1 min-w-0">
+<span class="material-symbols-outlined text-primary text-[14px]">arrow_forward</span>
+<span class="font-code-sm text-code-sm text-tertiary truncate">Backup/Thesis/dataset_summary.pdf</span>
+</div>
+<div class="col-span-2">
+<span class="font-code-sm text-code-sm bg-tertiary-container/30 text-tertiary px-2 py-0.5 rounded inline-block truncate">
+                  Copy File
+                </span>
+</div>
+<div class="col-span-3 text-right">
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Standard document ready to transfer</span>
+</div>
+</div>
+</div>
+<!-- Table Terminal / Log Console Preview -->
+<div class="bg-surface-container-lowest p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-caps text-label-caps pb-1">
+<span>REAL-TIME ENGINE AUDIT LOG</span>
+<span>BUFFER: 4 ENTRIES / 0 FAILS</span>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant space-y-1">
+<div class="flex items-center gap-2">
+<span class="text-outline">[14:32:01]</span>
+<span class="text-tertiary">PASS</span>
+<span>SHA-256 verification hash recorded for 24 source nodes.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline">[14:32:02]</span>
+<span class="text-secondary">WARN</span>
+<span>CRLF line ending detected in run_pipeline.bat → staged for LF normalization.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline">[14:32:04]</span>
+<span class="text-primary">INFO</span>
+<span>Sandbox destination allocated at /var/vorqen/staged_thesis_migration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Final Approval Action Footer -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<button class="flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-body-bold text-body-bold px-space-md py-space-sm bg-surface-container rounded-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Go Back to Overview</span>
+</button>
+<div class="hidden sm:flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">SIMULATION VERIFIED</span>
+<span class="font-body-sm text-body-sm text-on-surface">Zero disk write ops performed so far</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="w-full sm:w-auto flex items-center justify-center gap-space-sm px-space-xl py-space-md bg-secondary text-on-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed rounded-lg font-body-bold text-body-bold shadow-[0_4px_20px_rgba(206,189,255,0.25)] transition-all transform active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+<span>Confirm & Stage Migration</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div><div class="fixed bottom-space-xl right-space-xl w-96 bg-surface-container-high rounded-xl p-space-lg shadow-[0_12px_32px_rgba(0,0,0,0.45)] z-50 flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">New Folder Detected</span><button class="text-outline hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button></div><div><p class="font-title-sm text-title-sm font-bold text-on-surface truncate">Deep Learning Project</p><p class="font-code-sm text-code-sm text-outline truncate">D:\Projects\Deep Learning Project</p></div><p class="font-body-sm text-body-sm text-on-surface-variant">VORQEN can help you organize it.</p><div class="flex items-center gap-space-sm pt-space-xs"><button class="flex-1 py-1.5 px-space-sm bg-surface-container text-on-surface hover:bg-surface-bright font-body-sm text-body-sm rounded-lg transition-colors" type="button">Add Details</button><button class="flex-1 py-1.5 px-space-sm bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-body-sm text-body-sm rounded-lg font-body-bold transition-colors" type="button">Organize</button><button class="py-1.5 px-space-sm text-outline hover:text-on-surface font-body-sm text-body-sm transition-colors" type="button">Dismiss</button></div></div></body></html>
